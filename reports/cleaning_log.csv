@@ -1,0 +1,4 @@
+timestamp,dataset,step,column_affected,issue_found,action_taken,rows_affected,validation_result,analyst_notes
+2026-04-30T15:19:59.263171+00:00,test_dataset,verify_step,HW70,DHS code 9999 present,Replaced with NaN,100,PASS,Verification row — safe to ignore
+2026-04-30T15:23:10.989483+00:00,test_dataset,verify_step,HW70,DHS code 9999 present,Replaced with NaN,100,PASS,Verification row — safe to ignore
+2026-04-30T15:24:49.185360+00:00,test_dataset,verify_step,HW70,DHS code 9999 present,Replaced with NaN,100,PASS,Verification row — safe to ignore

@@ -1,0 +1,6 @@
+2026-04-30 15:23:10  DEBUG     verify_test: debug message
+2026-04-30 15:23:10  INFO      verify_test: info message
+2026-04-30 15:23:10  WARNING   verify_test: warning message
+2026-04-30 15:24:49  DEBUG     verify_test: debug message
+2026-04-30 15:24:49  INFO      verify_test: info message
+2026-04-30 15:24:49  WARNING   verify_test: warning message
