@@ -4,3 +4,15 @@
 2026-04-30 15:24:49  DEBUG     verify_test: debug message
 2026-04-30 15:24:49  INFO      verify_test: info message
 2026-04-30 15:24:49  WARNING   verify_test: warning message
+2026-04-30 15:51:43  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:51:43  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:51:43  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:51:43  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:51:43  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-04-30 15:51:43  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-04-30 15:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-04-30 15:52:09  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-04-30 15:52:09  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
