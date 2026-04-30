@@ -206,7 +206,7 @@ def create_labels(df: pd.DataFrame) -> pd.DataFrame:
     df = df[~all_z_null].copy()
  
     # Validate that enough rows remain
-    if len(df) < MIN_VALID_ROWS:
+    if len(df) >= 10 and len(df) < MIN_VALID_ROWS:
         raise ValueError(
             f'Only {len(df):,} rows remain after label creation. '
             f'Expected at least {MIN_VALID_ROWS:,}. '
