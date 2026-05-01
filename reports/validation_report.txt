@@ -216,3 +216,88 @@ Timestamp: 2026-05-01 08:01:34 UTC
   [PASS] G12: Cleaning log has entries  — 69 entries recorded
 
 Summary: 12 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Label integrity validation post-apply_who_thresholds
+Timestamp: 2026-05-01 08:28:02 UTC
+======================================================================
+
+  [PASS] V1: All target columns present  — ['stunted', 'underweight', 'wasted']
+  [PASS] V2: stunted is binary  — Values: {0, 1}
+  [PASS] V2: underweight is binary  — Values: {0, 1}
+  [PASS] V2: wasted is binary  — Values: {0, 1}
+  [PASS] V3: stunted prevalence in expected range  — 35.5% (expected 30%–42%)
+  [PASS] V4: underweight prevalence in expected range  — 30.9% (expected 27%–38%)
+  [PASS] V5: wasted prevalence in expected range  — 18.6% (expected 15%–25%)
+  [PASS] V6: Row count meets minimum  — 229,048
+  [PASS] V7: Label-Z-score consistency  — No orphaned Z-scores
+
+Summary: 9 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Label integrity validation post-apply_who_thresholds
+Timestamp: 2026-05-01 08:37:38 UTC
+======================================================================
+
+  [PASS] V1: All target columns present  — ['stunted', 'underweight', 'wasted']
+  [PASS] V2: stunted is binary  — Values: {0, 1}
+  [PASS] V2: underweight is binary  — Values: {0, 1}
+  [PASS] V2: wasted is binary  — Values: {0, 1}
+  [PASS] V3: stunted prevalence in expected range  — 35.5% (expected 30%–42%)
+  [PASS] V4: underweight prevalence in expected range  — 30.9% (expected 27%–38%)
+  [PASS] V5: wasted prevalence in expected range  — 18.6% (expected 15%–25%)
+  [PASS] V6: Row count meets minimum  — 229,048
+  [PASS] V7: Label-Z-score consistency  — No orphaned Z-scores
+
+Summary: 9 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Label integrity validation post-apply_who_thresholds
+Timestamp: 2026-05-01 08:38:06 UTC
+======================================================================
+
+  [PASS] V1: All target columns present  — ['stunted', 'underweight', 'wasted']
+  [PASS] V2: stunted is binary  — Values: {0, 1}
+  [PASS] V2: underweight is binary  — Values: {0, 1}
+  [PASS] V2: wasted is binary  — Values: {0, 1}
+  [PASS] V3: stunted prevalence in expected range  — 35.5% (expected 30%–42%)
+  [PASS] V4: underweight prevalence in expected range  — 30.9% (expected 27%–38%)
+  [PASS] V5: wasted prevalence in expected range  — 18.6% (expected 15%–25%)
+  [PASS] V6: Row count meets minimum  — 229,048
+  [PASS] V7: Label-Z-score consistency  — No orphaned Z-scores
+
+Summary: 9 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Label integrity validation post-apply_who_thresholds
+Timestamp: 2026-05-01 08:47:40 UTC
+======================================================================
+
+  [PASS] V1: All target columns present  — ['stunted', 'underweight', 'wasted']
+  [PASS] V2: stunted is binary  — Values: {0, 1}
+  [PASS] V2: underweight is binary  — Values: {0, 1}
+  [PASS] V2: wasted is binary  — Values: {0, 1}
+  [PASS] V3: stunted prevalence in expected range  — 35.5% (expected 30%–42%)
+  [PASS] V4: underweight prevalence in expected range  — 30.9% (expected 27%–38%)
+  [PASS] V5: wasted prevalence in expected range  — 18.6% (expected 15%–25%)
+  [PASS] V6: Row count meets minimum  — 229,048
+  [PASS] V7: Label-Z-score consistency  — No orphaned Z-scores
+
+Summary: 9 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Label integrity validation post-apply_who_thresholds
+Timestamp: 2026-05-01 08:48:55 UTC
+======================================================================
+
+  [PASS] V1: All target columns present  — ['stunted', 'underweight', 'wasted']
+  [PASS] V2: stunted is binary  — Values: {0, 1}
+  [PASS] V2: underweight is binary  — Values: {0, 1}
+  [PASS] V2: wasted is binary  — Values: {0, 1}
+  [PASS] V3: stunted prevalence in expected range  — 35.5% (expected 30%–42%)
+  [PASS] V4: underweight prevalence in expected range  — 30.9% (expected 27%–38%)
+  [PASS] V5: wasted prevalence in expected range  — 18.6% (expected 15%–25%)
+  [PASS] V6: Row count meets minimum  — 229,048
+  [PASS] V7: Label-Z-score consistency  — No orphaned Z-scores
+
+Summary: 9 passed, 0 failed — ALL PASSED
