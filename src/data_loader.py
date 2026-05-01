@@ -78,11 +78,7 @@ def load_nfhs5_kr(
     for required in ['HW70', 'HW71', 'HW72']:
         if required not in cols:
             cols.append(required)
- 
-    log.info(f'Loading {len(cols)} columns from {path.name}...')
- 
-    # ── Step 1: Load from Stata .DTA ─────────────────────────────────────
-    # usecols= is critical — without it, pyreadstat loads all 1,300+ columns,
+    cols = [col.lower() for col in cols]
     # consuming 10+ GB of RAM and taking 15+ minutes.
     with timer(f'pyreadstat.read_dta ({path.name})'):
         df, meta = pyreadstat.read_dta(
@@ -100,13 +96,12 @@ def load_nfhs5_kr(
     # which would still look like an outlier but would NOT be filtered by
     # the physiological bounds check applied after scaling.
     z_cols_before = {c: int(df[c].isin(MISSING_CODES).sum())
-                     for c in ['HW70','HW71','HW72'] if c in df.columns}
+                     for c in ['hw70','hw71','hw72'] if c in df.columns}
  
-    for col in df.select_dtypes(include='number').columns:
-        df[col] = df[col].replace(MISSING_CODES, np.nan)
+    df = df.replace(MISSING_CODES, np.nan)
  
     z_missing_total = sum(
-        int(df[c].isnull().sum()) for c in ['HW70','HW71','HW72'] if c in df.columns
+        int(df[c].isnull().sum()) for c in ['hw70','hw71','hw72'] if c in df.columns
     )
     log.info(f'Missing code replacement: {sum(z_cols_before.values()):,} Z-score values → NaN')
  
@@ -126,9 +121,10 @@ def load_nfhs5_kr(
     # DHS stores Z-scores as integers multiplied by 100 to preserve two decimal
     # places without floating-point encoding. Divide by 100 to recover the actual
     # Z-score. Rename from DHS codes to readable names used throughout the project.
-    zscore_map = {'HW70': 'HAZ', 'HW71': 'WAZ', 'HW72': 'WHZ'}
+    zscore_map = {'hw70': 'HAZ', 'hw71': 'WAZ', 'hw72': 'WHZ'}
     for dhs_col, new_col in zscore_map.items():
         if dhs_col in df.columns:
+            df[dhs_col] = pd.to_numeric(df[dhs_col], errors='coerce')
             df[new_col] = df[dhs_col] / 100.0
             df.drop(columns=[dhs_col], inplace=True)
  
@@ -198,12 +194,24 @@ def create_labels(df: pd.DataFrame) -> pd.DataFrame:
     df['underweight'] = (df['WAZ'] < UNDERWEIGHT_THRESHOLD).astype(int)
     df['wasted']      = (df['WHZ'] < WASTING_THRESHOLD).astype(int)
  
+    # Enforce physiological bounds for Z-scores after scaling.
+    # Any values outside [-6, +6] should be treated as invalid measurements.
+    for z_col in ['HAZ', 'WAZ', 'WHZ']:
+        if z_col in df.columns:
+            df[z_col] = pd.to_numeric(df[z_col], errors='coerce')
+            df.loc[~df[z_col].between(Z_SCORE_MIN, Z_SCORE_MAX), z_col] = np.nan
+ 
     # Drop rows where ALL three Z-scores are NaN — no target can be assigned.
     # Rows with only one or two Z-scores missing are kept: the model can still
     # learn from the two valid labels.
     all_z_null = df[['HAZ', 'WAZ', 'WHZ']].isnull().all(axis=1)
     dropped = int(all_z_null.sum())
     df = df[~all_z_null].copy()
+ 
+    # Remove exact duplicate records after label creation.
+    dup_count = int(df.duplicated().sum())
+    if dup_count > 0:
+        df = df.drop_duplicates().copy()
  
     # Validate that enough rows remain
     if len(df) >= 10 and len(df) < MIN_VALID_ROWS:
