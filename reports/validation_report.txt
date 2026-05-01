@@ -301,3 +301,109 @@ Timestamp: 2026-05-01 08:48:55 UTC
   [PASS] V7: Label-Z-score consistency  — No orphaned Z-scores
 
 Summary: 9 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Synthetic valid test
+Timestamp: 2026-05-01 09:08:04 UTC
+======================================================================
+
+  [PASS] row_count  — 191000
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [PASS] no_duplicates  — 0
+  [PASS] prevalence  — {'stunted': 0.3491, 'underweight': 0.3195, 'wasted': 0.19}
+
+Summary: 6 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Multi-failure test
+Timestamp: 2026-05-01 09:08:05 UTC
+======================================================================
+
+  [PASS] row_count  — 191000
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [PASS] no_duplicates  — 0
+  [FAIL] prevalence  — 
+[VALIDATION FAILED] stunted_prevalence
+  Found:    0.00%
+  Expected: 30% – 42%  (source: NFHS-5 National Fact Sheet (2019-21), India)
+  Action:   Prevalence is too low. Check missing code replacement
+
+Summary: 5 passed, 1 failed — FAILED (1 failures)
+
+======================================================================
+VALIDATION RUN: Synthetic valid test
+Timestamp: 2026-05-01 09:11:56 UTC
+======================================================================
+
+  [PASS] row_count  — 191000
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [PASS] no_duplicates  — 0
+  [PASS] prevalence  — {'stunted': 0.3491, 'underweight': 0.3195, 'wasted': 0.19}
+
+Summary: 6 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Multi-failure test
+Timestamp: 2026-05-01 09:11:56 UTC
+======================================================================
+
+  [PASS] row_count  — 191000
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [PASS] no_duplicates  — 0
+  [FAIL] prevalence  — 
+[VALIDATION FAILED] stunted_prevalence
+  Found:    0.00%
+  Expected: 30% – 42%  (source: NFHS-5 National Fact Sheet (2019-21), India)
+  Action:   Prevalence is too low. Check missing code replacement
+  [FAIL] prevalence  — 
+[VALIDATION FAILED] wasted_prevalence
+  Found:    0.00%
+  Expected: 17% – 22%  (source: NFHS-5 National Fact Sheet (2019-21), India)
+  Action:   Prevalence is too low. Check missing code replacement,
+
+Summary: 5 passed, 2 failed — FAILED (2 failures)
+
+======================================================================
+VALIDATION RUN: Synthetic valid test
+Timestamp: 2026-05-01 09:12:07 UTC
+======================================================================
+
+  [PASS] row_count  — 191000
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [PASS] no_duplicates  — 0
+  [PASS] prevalence  — {'stunted': 0.3491, 'underweight': 0.3195, 'wasted': 0.19}
+
+Summary: 6 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Multi-failure test
+Timestamp: 2026-05-01 09:12:07 UTC
+======================================================================
+
+  [PASS] row_count  — 191000
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [PASS] no_duplicates  — 0
+  [FAIL] prevalence  — 
+[VALIDATION FAILED] stunted_prevalence
+  Found:    0.00%
+  Expected: 30% – 42%  (source: NFHS-5 National Fact Sheet (2019-21), India)
+  Action:   Prevalence is too low. Check missing code replacement
+  [FAIL] prevalence  — 
+[VALIDATION FAILED] wasted_prevalence
+  Found:    0.00%
+  Expected: 17% – 22%  (source: NFHS-5 National Fact Sheet (2019-21), India)
+  Action:   Prevalence is too low. Check missing code replacement,
+
+Summary: 5 passed, 2 failed — FAILED (2 failures)

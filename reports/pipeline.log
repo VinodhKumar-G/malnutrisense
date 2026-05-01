@@ -268,3 +268,83 @@
 2026-05-01 08:48:55  INFO      src.labels:   wasted: scale_pos_weight = 4.3937
 2026-05-01 08:48:57  WARNING   src.preprocessing: Dropped 30,252 rows with missing target labels before train/test split.
 2026-05-01 08:48:57  INFO      src.preprocessing: Train/test split: 159,036 train | 39,760 test (20% test, stratified on stunted)
+2026-05-01 09:08:04  INFO      src.validation: Running validate_all: Synthetic valid test
+2026-05-01 09:08:04  INFO      src.validation: Row count check PASSED: 191,000
+2026-05-01 09:08:04  INFO      src.validation: Missing code check PASSED
+2026-05-01 09:08:04  INFO      src.validation: Z-score scale check PASSED
+2026-05-01 09:08:04  INFO      src.validation: Label binary check PASSED
+2026-05-01 09:08:04  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-05-01 09:08:04  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:08:04  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:08:04  INFO      src.validation: wasted: 19.0%  (threshold 17%–22%)
+2026-05-01 09:08:04  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-05-01 09:08:04  INFO      src.validation: validate_all PASSED
+2026-05-01 09:08:04  INFO      src.validation: stunted: 10.0%  (threshold 30%–42%)
+2026-05-01 09:08:04  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:08:04  INFO      src.validation: underweight: 45.0%  (threshold 30%–35%)
+2026-05-01 09:08:04  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:08:04  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:08:04  INFO      src.validation: wasted: 5.0%  (threshold 17%–22%)
+2026-05-01 09:08:05  INFO      src.validation: Row count check PASSED: 191,000
+2026-05-01 09:08:05  INFO      src.validation: Missing code check PASSED
+2026-05-01 09:08:05  INFO      src.validation: Z-score scale check PASSED
+2026-05-01 09:08:05  INFO      src.validation: Label binary check PASSED
+2026-05-01 09:08:05  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-05-01 09:08:05  INFO      src.validation: stunted: 0.0%  (threshold 30%–42%)
+2026-05-01 09:08:05  WARNING   src.validation: validate_all_soft: 1 failures
+2026-05-01 09:11:56  INFO      src.validation: Running validate_all: Synthetic valid test
+2026-05-01 09:11:56  INFO      src.validation: Row count check PASSED: 191,000
+2026-05-01 09:11:56  INFO      src.validation: Missing code check PASSED
+2026-05-01 09:11:56  INFO      src.validation: Z-score scale check PASSED
+2026-05-01 09:11:56  INFO      src.validation: Label binary check PASSED
+2026-05-01 09:11:56  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-05-01 09:11:56  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:11:56  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:11:56  INFO      src.validation: wasted: 19.0%  (threshold 17%–22%)
+2026-05-01 09:11:56  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-05-01 09:11:56  INFO      src.validation: validate_all PASSED
+2026-05-01 09:11:56  INFO      src.validation: stunted: 10.0%  (threshold 30%–42%)
+2026-05-01 09:11:56  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:11:56  INFO      src.validation: underweight: 45.0%  (threshold 30%–35%)
+2026-05-01 09:11:56  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:11:56  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:11:56  INFO      src.validation: wasted: 5.0%  (threshold 17%–22%)
+2026-05-01 09:11:56  INFO      src.validation: Row count check PASSED: 191,000
+2026-05-01 09:11:56  INFO      src.validation: Missing code check PASSED
+2026-05-01 09:11:56  INFO      src.validation: Z-score scale check PASSED
+2026-05-01 09:11:56  INFO      src.validation: Label binary check PASSED
+2026-05-01 09:11:56  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-05-01 09:11:56  INFO      src.validation: stunted: 0.0%  (threshold 30%–42%)
+2026-05-01 09:11:56  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:11:56  INFO      src.validation: wasted: 0.0%  (threshold 17%–22%)
+2026-05-01 09:11:56  WARNING   src.validation: Prevalence check FAILED for 2 phenotypes
+2026-05-01 09:11:56  WARNING   src.validation: validate_all_soft: 2 failures
+2026-05-01 09:11:56  INFO      src.validation: stunted: 10.0%  (threshold 30%–42%)
+2026-05-01 09:12:07  INFO      src.validation: Running validate_all: Synthetic valid test
+2026-05-01 09:12:07  INFO      src.validation: Row count check PASSED: 191,000
+2026-05-01 09:12:07  INFO      src.validation: Missing code check PASSED
+2026-05-01 09:12:07  INFO      src.validation: Z-score scale check PASSED
+2026-05-01 09:12:07  INFO      src.validation: Label binary check PASSED
+2026-05-01 09:12:07  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-05-01 09:12:07  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:12:07  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:12:07  INFO      src.validation: wasted: 19.0%  (threshold 17%–22%)
+2026-05-01 09:12:07  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-05-01 09:12:07  INFO      src.validation: validate_all PASSED
+2026-05-01 09:12:07  INFO      src.validation: stunted: 10.0%  (threshold 30%–42%)
+2026-05-01 09:12:07  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:12:07  INFO      src.validation: underweight: 45.0%  (threshold 30%–35%)
+2026-05-01 09:12:07  INFO      src.validation: stunted: 34.9%  (threshold 30%–42%)
+2026-05-01 09:12:07  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:12:07  INFO      src.validation: wasted: 5.0%  (threshold 17%–22%)
+2026-05-01 09:12:07  INFO      src.validation: Row count check PASSED: 191,000
+2026-05-01 09:12:07  INFO      src.validation: Missing code check PASSED
+2026-05-01 09:12:07  INFO      src.validation: Z-score scale check PASSED
+2026-05-01 09:12:07  INFO      src.validation: Label binary check PASSED
+2026-05-01 09:12:07  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-05-01 09:12:07  INFO      src.validation: stunted: 0.0%  (threshold 30%–42%)
+2026-05-01 09:12:07  INFO      src.validation: underweight: 32.0%  (threshold 30%–35%)
+2026-05-01 09:12:07  INFO      src.validation: wasted: 0.0%  (threshold 17%–22%)
+2026-05-01 09:12:07  WARNING   src.validation: Prevalence check FAILED for 2 phenotypes
+2026-05-01 09:12:07  WARNING   src.validation: validate_all_soft: 2 failures
+2026-05-01 09:12:07  INFO      src.validation: stunted: 10.0%  (threshold 30%–42%)
