@@ -407,3 +407,106 @@ Timestamp: 2026-05-01 09:12:07 UTC
   Action:   Prevalence is too low. Check missing code replacement,
 
 Summary: 5 passed, 2 failed — FAILED (2 failures)
+
+======================================================================
+MALNUTRISENSE — DATA VALIDATION REPORT
+Generated: 2026-05-01 09:16:47 UTC
+Script:    scripts/generate_report.py
+======================================================================
+
+SECTION 1: ENVIRONMENT
+──────────────────────────────────────────────────────────────────────
+  Python version:  3.12.1
+  Platform:        Linux 6.8.0-1044-azure
+  Environment:     PASS
+  Cleaned data:    /workspaces/malnutrisense/data/processed/nfhs5_cleaned.csv
+
+SECTION 2: DATASET STATISTICS
+──────────────────────────────────────────────────────────────────────
+  Rows:     229,048
+  Columns:  17
+  Cols:     ['v024', 'v025', 'v106', 'v130', 'b4', 'm4', 'm19', 'h11', 'hw1', 'hw2', 'hw3', 'HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+
+  Missing values per column (non-zero only):
+    WHZ                           27,368 (11.9%)
+    wasted                        27,368 (11.9%)
+    HAZ                           23,029 (10.1%)
+    stunted                       23,029 (10.1%)
+    WAZ                           18,531 (8.1%)
+    underweight                   18,531 (8.1%)
+
+SECTION 3: VALIDATION CHECKS
+──────────────────────────────────────────────────────────────────────
+  Running validate_all_soft() — collects all failures
+
+
+======================================================================
+VALIDATION RUN: generate_report — 2026-05-01 09:16:47 UTC
+Timestamp: 2026-05-01 09:16:47 UTC
+======================================================================
+
+  [PASS] row_count  — 229048
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [FAIL] no_duplicates  — 
+[VALIDATION FAILED] no_duplicate_rows
+  Found:    692 duplicate rows
+  Expected: <= 100 duplicate rows (NFHS tolerance)
+  Action:   Check preprocessing.remove_duplicates() was called.
+
+Summary: 4 passed, 1 failed — FAILED (1 failures)
+  RESULT: 1 CHECK(S) FAILED
+
+  Failure 1:
+    [VALIDATION FAILED] no_duplicate_rows
+      Found:    692 duplicate rows
+      Expected: <= 100 duplicate rows (NFHS tolerance)
+      Action:   Check preprocessing.remove_duplicates() was called.
+
+SECTION 4: PREVALENCE AND CLASS BALANCE
+──────────────────────────────────────────────────────────────────────
+  Phenotype              Measured           Threshold    Status
+  -------------------- ----------  ------------------  --------
+  stunted                  35.5%  30% – 42%              PASS
+  underweight              30.9%  30% – 35%              PASS
+  wasted                   18.6%  17% – 22%              PASS
+
+  XGBoost scale_pos_weight:
+    stunted              1.7864
+    underweight          2.4099
+    wasted               4.3937
+
+SECTION 5: TRAIN / TEST SPLIT
+──────────────────────────────────────────────────────────────────────
+  X_train        159,036 rows  x  11 cols
+  X_test          39,760 rows  x  11 cols
+  y_train        159,036 rows  x  3 cols
+  y_test          39,760 rows  x  3 cols
+
+SECTION 6: OVERALL VERDICT
+======================================================================
+  VERDICT: FAIL (1 failure(s))
+  Fix all failures above before starting model training.
+  Re-run: python3 scripts/run_pipeline.py
+          python3 scripts/generate_report.py
+======================================================================
+
+
+======================================================================
+VALIDATION RUN: VERIFY: intentional failure
+Timestamp: 2026-05-01 09:17:43 UTC
+======================================================================
+
+  [PASS] row_count  — 190100
+  [PASS] no_missing_codes  — True
+  [PASS] z_score_scale  — True
+  [PASS] label_binary  — True
+  [PASS] no_duplicates  — 0
+  [FAIL] prevalence  — 
+[VALIDATION FAILED] stunted_prevalence
+  Found:    4.97%
+  Expected: 30% – 42%  (source: NFHS-5 National Fact Sheet (2019-21), India)
+  Action:   Prevalence is too low. Check missing code replacement
+
+Summary: 5 passed, 1 failed — FAILED (1 failures)
