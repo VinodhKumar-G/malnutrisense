@@ -129,3 +129,6 @@
 2026-05-01 08:01:33  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
 2026-05-01 08:01:33  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
 2026-05-01 08:01:34  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-05-01 08:22:07  INFO      src.preprocessing: SC/ST column detected: V131
+2026-05-01 08:22:07  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-05-01 08:22:07  INFO      src.preprocessing: Categorical encoding applied to: ['B4', 'V025']
