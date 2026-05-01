@@ -495,7 +495,25 @@ def make_train_test_split(
     exclude = set(TARGET_COLS) | {'HAZ', 'WAZ', 'WHZ'}
     if feature_cols is None:
         feature_cols = [c for c in df.columns if c not in exclude]
- 
+
+    rows_before = len(df)
+    df = df.dropna(subset=TARGET_COLS).copy()
+    dropped = rows_before - len(df)
+    if dropped > 0:
+        log.warning(
+            f'Dropped {dropped:,} rows with missing target labels before train/test split.'
+        )
+        cleaning_log.log(
+            dataset='nfhs5_kr',
+            step='drop_missing_labels',
+            column_affected=', '.join(TARGET_COLS),
+            issue_found=f'{dropped:,} missing target labels',
+            action_taken='Dropped rows with NaN in target labels before stratified split',
+            rows_affected=dropped,
+            validation_result='PASS',
+            analyst_notes='Required for sklearn train_test_split stratify on stunted',
+        )
+
     X = df[feature_cols]
     y = df[TARGET_COLS]
  
