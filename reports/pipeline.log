@@ -132,3 +132,12 @@
 2026-05-01 08:22:07  INFO      src.preprocessing: SC/ST column detected: V131
 2026-05-01 08:22:07  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
 2026-05-01 08:22:07  INFO      src.preprocessing: Categorical encoding applied to: ['B4', 'V025']
+2026-05-01 08:24:19  INFO      src.labels: WHO thresholds applied: stunted=-2.0, underweight=-2.0, wasted=-2.0
+2026-05-01 08:24:19  INFO      src.labels: ─── Label Audit ───
+2026-05-01 08:24:19  INFO      src.labels:   stunted: 50.0% prevalence
+2026-05-01 08:24:19  INFO      src.labels:   underweight: 50.0% prevalence
+2026-05-01 08:24:19  INFO      src.labels:   wasted: 25.0% prevalence
+2026-05-01 08:24:19  INFO      src.labels:   stunted: scale_pos_weight = 1.0
+2026-05-01 08:24:19  INFO      src.labels:   underweight: scale_pos_weight = 1.0
+2026-05-01 08:24:19  INFO      src.labels:   wasted: scale_pos_weight = 1.0
+2026-05-01 08:24:19  INFO      src.labels: WHO thresholds applied: stunted=-2.0, underweight=-2.0, wasted=-2.0
