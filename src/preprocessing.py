@@ -463,6 +463,7 @@ def run_full_pipeline(df: pd.DataFrame) -> pd.DataFrame:
     df = impute_missing(df, sc_st_col=sc_st_col)
     df = cap_birth_weight(df)
     df = build_socioeconomic_index(df)
+    df = remove_duplicates(df)  # Remove any duplicates created by imputation
  
     log.info(f'Pipeline complete. Output: {len(df):,} rows x {df.shape[1]} columns')
     return df
