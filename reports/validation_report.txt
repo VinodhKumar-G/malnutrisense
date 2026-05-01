@@ -20,3 +20,199 @@ Timestamp: 2026-04-30 15:24:49 UTC
   [INFO] Informational note
 
 Summary: 1 passed, 1 failed — FAILED (1 failures)
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:38:21 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 215,244 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [FAIL] G3: Z-scores outside physiological range  — Out-of-range: {'HAZ': 5064, 'WAZ': 1160, 'WHZ': 12844}
+  [PASS] G4: Stunting prevalence within expected range  — 33.9% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.2% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.4% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [FAIL] G8: Duplicate rows present  — 35 duplicate rows
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.9456, 'underweight': 2.3093, 'wasted': 4.7317}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 32 entries recorded
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:38:53 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 215,244 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [FAIL] G3: Z-scores outside physiological range  — Out-of-range: {'HAZ': 5064, 'WAZ': 1160, 'WHZ': 12844}
+  [PASS] G4: Stunting prevalence within expected range  — 33.9% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.2% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.4% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [FAIL] G8: Duplicate rows present  — 35 duplicate rows
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.9456, 'underweight': 2.3093, 'wasted': 4.7317}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 35 entries recorded
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:42:02 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 215,244 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [FAIL] G3: Z-scores outside physiological range  — Out-of-range: {'HAZ': 5064, 'WAZ': 1160, 'WHZ': 12844}
+  [PASS] G4: Stunting prevalence within expected range  — 33.9% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.2% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.4% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [FAIL] G8: Duplicate rows present  — 35 duplicate rows
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.9456, 'underweight': 2.3093, 'wasted': 4.7317}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 38 entries recorded
+
+Summary: 10 passed, 2 failed — FAILED (2 failures)
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:42:47 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 215,244 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [FAIL] G3: Z-scores outside physiological range  — Out-of-range: {'HAZ': 5064, 'WAZ': 1160, 'WHZ': 12844}
+  [PASS] G4: Stunting prevalence within expected range  — 33.9% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.2% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.4% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [FAIL] G8: Duplicate rows present  — 35 duplicate rows
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.9456, 'underweight': 2.3093, 'wasted': 4.7317}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 41 entries recorded
+
+Summary: 10 passed, 2 failed — FAILED (2 failures)
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:46:08 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 215,244 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [FAIL] G3: Z-scores outside physiological range  — Out-of-range: {'HAZ': 5064, 'WAZ': 1160, 'WHZ': 12844}
+  [PASS] G4: Stunting prevalence within expected range  — 33.9% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.2% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.4% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [FAIL] G8: Duplicate rows present  — 35 duplicate rows
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.9456, 'underweight': 2.3093, 'wasted': 4.7317}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 44 entries recorded
+
+Summary: 10 passed, 2 failed — FAILED (2 failures)
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:47:47 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 215,244 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [FAIL] G3: Z-scores outside physiological range  — Out-of-range: {'HAZ': 5064, 'WAZ': 1160, 'WHZ': 12844}
+  [PASS] G4: Stunting prevalence within expected range  — 33.9% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.2% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.4% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [FAIL] G8: Duplicate rows present  — 35 duplicate rows
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.9456, 'underweight': 2.3093, 'wasted': 4.7317}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 52 entries recorded
+
+Summary: 10 passed, 2 failed — FAILED (2 failures)
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:48:42 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 215,244 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [FAIL] G3: Z-scores outside physiological range  — Out-of-range: {'HAZ': 5064, 'WAZ': 1160, 'WHZ': 12844}
+  [PASS] G4: Stunting prevalence within expected range  — 33.9% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.2% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.4% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [FAIL] G8: Duplicate rows present  — 35 duplicate rows
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.9456, 'underweight': 2.3093, 'wasted': 4.7317}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 55 entries recorded
+
+Summary: 10 passed, 2 failed — FAILED (2 failures)
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:53:39 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 211,639 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [PASS] G3: Z-scores within physiological range [-6, +6]  — All clear
+  [PASS] G4: Stunting prevalence within expected range  — 34.5% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.7% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.7% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [PASS] G8: No duplicate rows  — All rows are unique
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.8964, 'underweight': 2.2539, 'wasted': 4.6357}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 63 entries recorded
+
+Summary: 12 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 07:54:15 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 211,639 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [PASS] G3: Z-scores within physiological range [-6, +6]  — All clear
+  [PASS] G4: Stunting prevalence within expected range  — 34.5% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.7% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.7% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [PASS] G8: No duplicate rows  — All rows are unique
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.8964, 'underweight': 2.2539, 'wasted': 4.6357}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 66 entries recorded
+
+Summary: 12 passed, 0 failed — ALL PASSED
+
+======================================================================
+VALIDATION RUN: Initial NFHS-5 data validation — post-download gates
+Timestamp: 2026-05-01 08:01:34 UTC
+======================================================================
+
+  [PASS] G1: Row count above minimum  — 211,639 rows (min 190,000)
+  [PASS] G2: No DHS missing codes remain  — All 9996-9999 replaced with NaN
+  [PASS] G3: Z-scores within physiological range [-6, +6]  — All clear
+  [PASS] G4: Stunting prevalence within expected range  — 34.5% (expected 30%–42%)
+  [PASS] G5: Underweight prevalence within expected range  — 30.7% (expected 27%–38%)
+  [PASS] G6: Wasting prevalence within expected range  — 17.7% (expected 15%–25%)
+  [PASS] G7: Target labels contain only 0 and 1  — 3 columns verified
+  [PASS] G8: No duplicate rows  — All rows are unique
+  [PASS] G9: All required columns present  — ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+  [PASS] G10: Class weights computed  — {'stunted': 1.8964, 'underweight': 2.2539, 'wasted': 4.6357}
+  [PASS] G11: Key feature columns have no nulls  — ['HV270', 'B4', 'V025']
+  [PASS] G12: Cleaning log has entries  — 69 entries recorded
+
+Summary: 12 passed, 0 failed — ALL PASSED
