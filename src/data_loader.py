@@ -208,13 +208,18 @@ def create_labels(df: pd.DataFrame) -> pd.DataFrame:
     dropped = int(all_z_null.sum())
     df = df[~all_z_null].copy()
  
+    # Track row count before deduplication for validation logic
+    rows_before_dedup = len(df)
+ 
     # Remove exact duplicate records after label creation.
     dup_count = int(df.duplicated().sum())
     if dup_count > 0:
         df = df.drop_duplicates().copy()
  
-    # Validate that enough rows remain
-    if len(df) >= 10 and len(df) < MIN_VALID_ROWS:
+    # Validate that enough rows remain. If we started with >= 10 rows but fell
+    # below MIN_VALID_ROWS (e.g., due to deduplication), raise an error.
+    # Allow tiny test DataFrames (< 10 rows) to pass through for testing.
+    if rows_before_dedup >= 10 and len(df) < MIN_VALID_ROWS:
         raise ValueError(
             f'Only {len(df):,} rows remain after label creation. '
             f'Expected at least {MIN_VALID_ROWS:,}. '
