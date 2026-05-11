@@ -799,3 +799,45 @@
 2026-05-11 16:26:53  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
 2026-05-11 16:34:31  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
 2026-05-11 16:36:45  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.510
+2026-05-11 16:47:00  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.510
+2026-05-11 16:47:00  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/test_benchmark.csv
+2026-05-11 16:48:24  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-05-11 16:48:24  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-05-11 16:48:24  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-05-11 16:48:24  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-05-11 16:48:24  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-05-11 16:48:24  INFO      src.evaluation: Macro avg: recall=0.355
+2026-05-11 16:48:24  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-05-11 16:48:24  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-05-11 16:48:24  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-05-11 16:48:24  INFO      src.evaluation: Macro avg: recall=0.355
+2026-05-11 16:48:25  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-05-11 16:48:25  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-05-11 16:48:25  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-05-11 16:48:25  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-05-11 16:48:25  INFO      src.evaluation: Macro avg: recall=0.355
+2026-05-11 16:48:25  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-0/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-05-11 16:48:25  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-0/test_save_and_load_roundtrip0/test_model.pkl
+2026-05-11 16:48:29  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-05-11 16:48:29  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-05-11 16:48:29  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-05-11 16:48:29  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-05-11 16:48:29  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-05-11 16:48:29  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-05-11 16:48:34  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-05-11 16:48:34  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-05-11 16:48:34  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-05-11 16:48:34  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-05-11 16:48:34  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-05-11 16:48:34  INFO      src.evaluation: Macro avg: recall=0.355
+2026-05-11 16:48:34  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-05-11 16:48:34  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-05-11 16:48:34  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-05-11 16:48:34  INFO      src.evaluation: Macro avg: recall=0.355
+2026-05-11 16:48:35  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-05-11 16:48:35  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-05-11 16:48:35  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-05-11 16:48:35  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-05-11 16:48:35  INFO      src.evaluation: Macro avg: recall=0.355
+2026-05-11 16:48:35  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-05-11 16:48:35  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl
