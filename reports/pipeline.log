@@ -863,3 +863,18 @@
 2026-05-11 16:53:53  INFO      src.evaluation: wasted: recall=0.997 f1=0.958 roc_auc=0.999
 2026-05-11 16:53:53  INFO      src.evaluation: MLflow: logged run for xgb_single_wasted
 2026-05-11 16:53:53  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/baseline_benchmark.csv
+2026-05-11 16:55:56  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-05-11 16:55:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-05-11 16:55:56  INFO      __main__: Class weights: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-05-11 16:56:11  INFO      src.evaluation: stunted: recall=0.992 f1=0.965 roc_auc=0.998
+2026-05-11 16:56:11  INFO      src.evaluation: underweight: recall=0.992 f1=0.964 roc_auc=0.999
+2026-05-11 16:56:11  INFO      src.evaluation: wasted: recall=0.991 f1=0.963 roc_auc=0.999
+2026-05-11 16:56:11  INFO      src.evaluation: Macro avg: recall=0.992
+2026-05-11 16:56:11  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl  (5.1 MB)
+2026-05-11 16:56:12  INFO      src.evaluation: MLflow: logged run for mltp_xgb
+2026-05-11 16:56:44  INFO      src.evaluation: stunted: recall=0.987 f1=0.968 roc_auc=0.999
+2026-05-11 16:56:44  INFO      src.evaluation: underweight: recall=0.986 f1=0.969 roc_auc=0.999
+2026-05-11 16:56:44  INFO      src.evaluation: wasted: recall=0.989 f1=0.973 roc_auc=1.000
+2026-05-11 16:56:44  INFO      src.evaluation: Macro avg: recall=0.987
+2026-05-11 16:56:44  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_lgbm_v1.pkl  (8.3 MB)
+2026-05-11 16:56:44  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/full_benchmark.csv

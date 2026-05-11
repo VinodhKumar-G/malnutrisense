@@ -301,3 +301,6 @@ timestamp,dataset,step,column_affected,issue_found,action_taken,rows_affected,va
 2026-05-11T16:48:29.929830+00:00,nfhs5_kr,create_labels,"stunted, underweight, wasted",No binary target columns in raw data,Created from Z-scores using WHO thresholds (<-2.0). Dropped 0 rows with all Z-scores NaN.,0,PASS,"Stunted: 0.0%, Underweight: 100.0%, Wasted: 0.0%"
 2026-05-11T16:48:35.221700+00:00,model_artefacts,save_model,N/A,N/A — model save step,joblib.dump to /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl,-1,INFO,Size: 0.0 MB
 2026-05-11T16:53:53.659234+00:00,evaluation,save_benchmark,all,N/A — benchmark save step,Saved 9 rows to /workspaces/malnutrisense/reports/tables/baseline_benchmark.csv,9,INFO,baseline_benchmark
+2026-05-11T16:56:11.920316+00:00,model_artefacts,save_model,N/A,N/A — model save step,joblib.dump to /workspaces/malnutrisense/models/mltp_xgb_v1.pkl,-1,INFO,Size: 5.1 MB
+2026-05-11T16:56:44.724556+00:00,model_artefacts,save_model,N/A,N/A — model save step,joblib.dump to /workspaces/malnutrisense/models/mltp_lgbm_v1.pkl,-1,INFO,Size: 8.3 MB
+2026-05-11T16:56:44.734726+00:00,evaluation,save_benchmark,all,N/A — benchmark save step,Saved 15 rows to /workspaces/malnutrisense/reports/tables/full_benchmark.csv,15,INFO,full_benchmark
