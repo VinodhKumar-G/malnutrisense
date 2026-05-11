@@ -841,3 +841,25 @@
 2026-05-11 16:48:35  INFO      src.evaluation: Macro avg: recall=0.355
 2026-05-11 16:48:35  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
 2026-05-11 16:48:35  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl
+2026-05-11 16:52:32  INFO      __main__: Loading train/test splits...
+2026-05-11 16:52:32  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-05-11 16:52:32  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-05-11 16:52:33  INFO      src.evaluation: stunted: recall=0.845 f1=0.791 roc_auc=0.922
+2026-05-11 16:52:33  INFO      src.evaluation: MLflow: logged run for logistic_stunted
+2026-05-11 16:52:34  INFO      src.evaluation: underweight: recall=0.924 f1=0.849 roc_auc=0.962
+2026-05-11 16:52:34  INFO      src.evaluation: MLflow: logged run for logistic_underweight
+2026-05-11 16:52:36  INFO      src.evaluation: wasted: recall=0.975 f1=0.899 roc_auc=0.995
+2026-05-11 16:52:36  INFO      src.evaluation: MLflow: logged run for logistic_wasted
+2026-05-11 16:52:59  INFO      src.evaluation: stunted: recall=0.961 f1=0.908 roc_auc=0.987
+2026-05-11 16:52:59  INFO      src.evaluation: MLflow: logged run for random_forest_stunted
+2026-05-11 16:53:22  INFO      src.evaluation: underweight: recall=0.959 f1=0.867 roc_auc=0.986
+2026-05-11 16:53:22  INFO      src.evaluation: MLflow: logged run for random_forest_underweight
+2026-05-11 16:53:44  INFO      src.evaluation: wasted: recall=0.987 f1=0.837 roc_auc=0.994
+2026-05-11 16:53:44  INFO      src.evaluation: MLflow: logged run for random_forest_wasted
+2026-05-11 16:53:47  INFO      src.evaluation: stunted: recall=0.982 f1=0.970 roc_auc=0.999
+2026-05-11 16:53:47  INFO      src.evaluation: MLflow: logged run for xgb_single_stunted
+2026-05-11 16:53:50  INFO      src.evaluation: underweight: recall=0.988 f1=0.969 roc_auc=0.999
+2026-05-11 16:53:50  INFO      src.evaluation: MLflow: logged run for xgb_single_underweight
+2026-05-11 16:53:53  INFO      src.evaluation: wasted: recall=0.997 f1=0.958 roc_auc=0.999
+2026-05-11 16:53:53  INFO      src.evaluation: MLflow: logged run for xgb_single_wasted
+2026-05-11 16:53:53  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/baseline_benchmark.csv
