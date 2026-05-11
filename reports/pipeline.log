@@ -797,3 +797,4 @@
 2026-05-11 16:26:52  INFO      src.validation: wasted: 18.6%  (threshold 17%–22%)
 2026-05-11 16:26:52  INFO      src.validation: Prevalence check PASSED for all three phenotypes
 2026-05-11 16:26:53  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-05-11 16:34:31  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
