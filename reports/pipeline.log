@@ -968,3 +968,7 @@
 2026-05-17 15:49:11  WARNING   src.fairness: HV270 not found — cannot apply correction
 2026-05-17 15:49:11  WARNING   src.fairness: HV270 not found — cannot apply correction
 2026-05-17 15:49:11  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:53:26  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-05-17 15:53:26  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-05-17 15:53:46  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-05-17 15:53:46  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
