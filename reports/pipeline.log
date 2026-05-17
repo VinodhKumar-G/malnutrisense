@@ -898,3 +898,73 @@
 2026-05-12 16:23:07  INFO      src.evaluation: Macro avg: recall=0.987
 2026-05-12 16:23:07  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl  (5.1 MB)
 2026-05-12 16:23:44  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/full_benchmark.csv
+2026-05-12 16:41:34  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-05-12 16:44:30  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-05-12 16:45:16  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-05-12 17:10:06  INFO      src.explainability: SHAP values computed: 39760 rows, 11 features
+2026-05-17 12:57:18  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-05-17 12:57:23  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-05-17 12:57:26  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-05-17 13:21:59  INFO      src.explainability: SHAP values computed: 39760 rows, 11 features
+2026-05-17 13:37:04  INFO      src.explainability: SHAP values computed: 2000 rows, 11 features
+2026-05-17 13:41:40  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-05-17 13:41:41  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-05-17 13:41:41  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-05-17 13:41:42  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_stunted.png
+2026-05-17 13:41:42  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_underweight.png
+2026-05-17 13:41:43  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_wasted.png
+2026-05-17 13:57:48  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-05-17 13:57:49  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-05-17 14:23:28  INFO      src.explainability: SHAP values computed: 39760 rows, 11 features
+2026-05-17 14:57:54  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-05-17 14:57:55  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-05-17 14:57:57  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_stunted.png
+2026-05-17 14:57:58  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_underweight.png
+2026-05-17 14:57:58  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_wasted.png
+2026-05-17 14:58:04  INFO      src.explainability: Waterfall plot saved: /workspaces/malnutrisense/reports/figures/shap/waterfall_stunted_row12704.png
+2026-05-17 14:58:05  INFO      src.explainability: Waterfall plot saved: /workspaces/malnutrisense/reports/figures/shap/waterfall_stunted_row360.png
+2026-05-17 14:58:06  INFO      src.explainability: Waterfall plot saved: /workspaces/malnutrisense/reports/figures/shap/waterfall_stunted_row12848.png
+2026-05-17 14:58:31  INFO      src.explainability: Top 3 features for stunted: ['num__hw3', 'num__hw1', 'num__b4']
+2026-05-17 14:58:32  INFO      src.explainability: Dependence plot saved: /workspaces/malnutrisense/reports/figures/shap/dependence_stunted_num__hw3.png
+2026-05-17 14:58:34  INFO      src.explainability: Dependence plot saved: /workspaces/malnutrisense/reports/figures/shap/dependence_stunted_num__hw1.png
+2026-05-17 14:58:35  INFO      src.explainability: Dependence plot saved: /workspaces/malnutrisense/reports/figures/shap/dependence_stunted_num__b4.png
+2026-05-17 15:13:44  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-05-17 15:13:47  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-05-17 15:13:47  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-05-17 15:13:47  INFO      src.fairness: stunted/aspirational_dist: FNR overall=0.008
+2026-05-17 15:13:47  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-05-17 15:13:47  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-05-17 15:13:47  INFO      src.fairness: underweight/aspirational_dist: FNR overall=0.008
+2026-05-17 15:13:47  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-05-17 15:13:47  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-05-17 15:13:47  INFO      src.fairness: wasted/aspirational_dist: FNR overall=0.009
+2026-05-17 15:13:47  INFO      src.fairness: Equity report: 3 rows
+2026-05-17 15:13:47  INFO      src.fairness: Equity report saved: /workspaces/malnutrisense/reports/tables/equity_audit.csv
+2026-05-17 15:14:07  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:14:07  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:14:07  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:15:19  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:15:19  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:15:19  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:33:05  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-05-17 15:33:23  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:33:23  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:33:23  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:33:38  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-05-17 15:33:42  INFO      src.fairness: stunted/wealth_quintile: FNR overall=0.008
+2026-05-17 15:33:42  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-05-17 15:33:42  INFO      src.fairness: stunted/aspirational_dist: FNR overall=0.008
+2026-05-17 15:33:43  INFO      src.fairness: underweight/wealth_quintile: FNR overall=0.008
+2026-05-17 15:33:43  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-05-17 15:33:43  INFO      src.fairness: underweight/aspirational_dist: FNR overall=0.008
+2026-05-17 15:33:43  INFO      src.fairness: wasted/wealth_quintile: FNR overall=0.009
+2026-05-17 15:33:43  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-05-17 15:33:43  INFO      src.fairness: wasted/aspirational_dist: FNR overall=0.009
+2026-05-17 15:33:43  INFO      src.fairness: Equity report: 18 rows
+2026-05-17 15:33:43  INFO      src.fairness: Equity report saved: /workspaces/malnutrisense/reports/tables/equity_audit.csv
+2026-05-17 15:48:43  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-05-17 15:48:43  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-05-17 15:49:07  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-05-17 15:49:11  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:49:11  WARNING   src.fairness: HV270 not found — cannot apply correction
+2026-05-17 15:49:11  WARNING   src.fairness: HV270 not found — cannot apply correction

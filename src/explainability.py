@@ -131,15 +131,18 @@ class SHAPExplainer:
         X_pre = self._transform_X(X)
  
         fig, ax = plt.subplots(figsize=(10, 6))
-        shap.summary_plot(
-            shap_values[idx],
-            X_pre,
-            feature_names=self.feature_names,
-            plot_type='bar',
-            max_display=max_features,
-            show=False,
-            ax=ax,
-        )
+        plot_kwargs = {
+            'feature_names': self.feature_names,
+            'plot_type': 'bar',
+            'max_display': max_features,
+            'show': False,
+        }
+        try:
+            shap.summary_plot(shap_values[idx], X_pre, ax=ax, **plot_kwargs)
+        except TypeError:
+            shap.summary_plot(shap_values[idx], X_pre, **plot_kwargs)
+            ax = plt.gca()
+
         ax.set_title(f'SHAP Feature Importance — {label.capitalize()}',
                      fontsize=13, fontweight='bold')
         plt.tight_layout()
