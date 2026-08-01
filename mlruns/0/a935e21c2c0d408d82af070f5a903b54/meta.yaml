@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/malnutrisense/mlruns/0/a935e21c2c0d408d82af070f5a903b54/artifacts
+end_time: 1785599506575
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a935e21c2c0d408d82af070f5a903b54
+run_name: random_forest_stunted
+run_uuid: a935e21c2c0d408d82af070f5a903b54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785599506560
+status: 3
+tags: []
+user_id: codespace

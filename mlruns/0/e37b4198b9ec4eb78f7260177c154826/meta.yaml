@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/malnutrisense/mlruns/0/e37b4198b9ec4eb78f7260177c154826/artifacts
+end_time: 1785599485239
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e37b4198b9ec4eb78f7260177c154826
+run_name: logistic_wasted
+run_uuid: e37b4198b9ec4eb78f7260177c154826
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785599485223
+status: 3
+tags: []
+user_id: codespace

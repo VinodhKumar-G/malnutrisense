@@ -15,7 +15,6 @@ import sys, json
 from datetime import datetime, timezone
 from pathlib import Path
 import pandas as pd
-import numpy as np
  
 sys.path.insert(0, str(Path(__file__).parent.parent))
  
@@ -36,6 +35,13 @@ def _w(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'a', encoding='utf-8') as f:
         f.write(text)
+
+
+def _reset(path: Path) -> None:
+    """Start a fresh report for the current run."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write('')
  
 def _div(path: Path, char: str='─', w: int=70) -> None:
     _w(path, char * w + '\n')
@@ -43,6 +49,7 @@ def _div(path: Path, char: str='─', w: int=70) -> None:
  
 def generate_model_report() -> bool:
     """Generate the model report. Returns True if MLTP beats all baselines."""
+    _reset(REPORT_PATH)
     ts = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
  
     # Header
@@ -114,8 +121,6 @@ def generate_model_report() -> bool:
                 top = explainer.get_top_features(shap_vals, label, n=8)
                 _w(REPORT_PATH, f'  {label.capitalize()} — top features:\n')
                 for i, feat in enumerate(top, 1):
-                    idx = TARGET_COLS.index(label)
-                    mean_abs = float(np.abs(shap_vals[idx]).mean(axis=0))
                     _w(REPORT_PATH, f'    {i}. {feat}\n')
                 _w(REPORT_PATH, '\n')
             _w(REPORT_PATH, '  Objective 3 verdict: PASS — SHAP values computed and plotted\n\n')

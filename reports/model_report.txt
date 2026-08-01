@@ -1,7 +1,7 @@
 
 ======================================================================
 MALNUTRISENSE — WEEK 3 MODEL REPORT
-Generated: 2026-05-17 15:53:23 UTC
+Generated: 2026-08-01 16:50:02 UTC
 ======================================================================
 
 SECTION 1: BENCHMARK — MLTP vs BASELINES (Objective 1)
@@ -37,8 +37,36 @@ SECTION 1: BENCHMARK — MLTP vs BASELINES (Objective 1)
 SECTION 2: SHAP FEATURE IMPORTANCE (Objective 3)
 ──────────────────────────────────────────────────────────────────────
   Stunted — top features:
-  WARNING: Could not compute SHAP — only length-1 arrays can be converted to Python scalars
-  Run notebook 03_shap_fairness.ipynb first.
+    1. num__hw3
+    2. num__hw1
+    3. num__b4
+    4. num__hw2
+    5. num__m19
+    6. num__v106
+    7. num__v024
+    8. num__m4
+
+  Underweight — top features:
+    1. num__hw2
+    2. num__hw1
+    3. num__b4
+    4. num__hw3
+    5. num__m19
+    6. num__v106
+    7. num__v024
+    8. num__m4
+
+  Wasted — top features:
+    1. num__hw2
+    2. num__hw3
+    3. num__b4
+    4. num__hw1
+    5. num__v024
+    6. num__m19
+    7. num__m4
+    8. num__v130
+
+  Objective 3 verdict: PASS — SHAP values computed and plotted
 
 SECTION 3: EQUITY AUDIT — FNR by Demographic Group (Objective 4)
 ──────────────────────────────────────────────────────────────────────
@@ -68,9 +96,9 @@ SECTION 3: EQUITY AUDIT — FNR by Demographic Group (Objective 4)
   wasted          aspirational_dist      0               0.009    0.991
 
   Threshold corrections applied:
-    stunted: {}
-    underweight: {}
-    wasted: {}
+    stunted: {'1': 0.5, '2': 0.5, '3': 0.5, '4': 0.5, '5': 0.5}
+    underweight: {'1': 0.5, '2': 0.5, '3': 0.5, '4': 0.5, '5': 0.5}
+    wasted: {'1': 0.5, '2': 0.5, '3': 0.5, '4': 0.5, '5': 0.5}
 
   Objective 4 verdict: PASS
 

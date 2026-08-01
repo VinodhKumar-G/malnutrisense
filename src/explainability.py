@@ -97,6 +97,41 @@ class SHAPExplainer:
             index=X.index,
         )
  
+    def _normalize_shap_array(
+        self,
+        values,
+        n_rows: int,
+        n_cols: int,
+    ) -> np.ndarray:
+        """Normalize SHAP outputs from different shap versions into a 2D array."""
+        if hasattr(values, 'values'):
+            values = values.values
+
+        if isinstance(values, (list, tuple)):
+            if len(values) == 0:
+                data = np.empty((n_rows, n_cols), dtype=float)
+            elif len(values) == 1:
+                data = values[0]
+            else:
+                data = values[1]
+        else:
+            data = values
+
+        arr = np.asarray(data, dtype=float)
+        if arr.ndim == 3 and arr.shape[-1] == 2:
+            arr = arr[:, :, 1]
+        if arr.ndim == 1:
+            arr = arr.reshape(-1, 1)
+        if arr.ndim > 2:
+            arr = arr.reshape(n_rows, -1)
+        if arr.shape[0] != n_rows:
+            arr = arr.reshape(n_rows, -1)
+        if arr.shape[1] < n_cols:
+            arr = np.pad(arr, ((0, 0), (0, n_cols - arr.shape[1])), constant_values=0.0)
+        elif arr.shape[1] > n_cols:
+            arr = arr[:, :n_cols]
+        return arr
+
     def compute_shap_values(
         self,
         X: pd.DataFrame,
@@ -110,7 +145,11 @@ class SHAPExplainer:
         """
         X_pre = self._transform_X(X)
         values = [
-            exp.shap_values(X_pre, check_additivity=False)
+            self._normalize_shap_array(
+                exp.shap_values(X_pre, check_additivity=False),
+                X_pre.shape[0],
+                X_pre.shape[1],
+            )
             for exp in self.explainers
         ]
         log.info(f'SHAP values computed: {X_pre.shape[0]} rows, {X_pre.shape[1]} features')

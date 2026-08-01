@@ -972,3 +972,730 @@
 2026-05-17 15:53:26  INFO      src.explainability: SHAPExplainer initialised for 3 labels
 2026-05-17 15:53:46  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
 2026-05-17 15:53:46  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 15:50:34  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:50:34  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:50:34  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:50:34  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:50:34  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 15:50:34  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 15:50:38  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 15:50:38  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 15:50:39  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 15:50:39  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 15:50:39  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 15:50:39  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 15:50:39  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 15:50:39  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 15:50:39  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 15:50:39  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 15:50:39  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 15:50:39  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 15:50:39  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 15:50:39  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 15:50:39  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 15:50:39  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-0/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 15:50:39  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-0/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 15:51:19  INFO      __main__: Loading train/test splits...
+2026-08-01 15:51:22  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 15:51:22  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 15:51:22  INFO      src.evaluation: stunted: recall=0.845 f1=0.791 roc_auc=0.922
+2026-08-01 15:51:23  INFO      src.evaluation: MLflow: logged run for logistic_stunted
+2026-08-01 15:51:24  INFO      src.evaluation: underweight: recall=0.924 f1=0.849 roc_auc=0.962
+2026-08-01 15:51:24  INFO      src.evaluation: MLflow: logged run for logistic_underweight
+2026-08-01 15:51:25  INFO      src.evaluation: wasted: recall=0.975 f1=0.899 roc_auc=0.995
+2026-08-01 15:51:25  INFO      src.evaluation: MLflow: logged run for logistic_wasted
+2026-08-01 15:51:46  INFO      src.evaluation: stunted: recall=0.961 f1=0.908 roc_auc=0.987
+2026-08-01 15:51:46  INFO      src.evaluation: MLflow: logged run for random_forest_stunted
+2026-08-01 15:52:07  INFO      src.evaluation: underweight: recall=0.959 f1=0.867 roc_auc=0.986
+2026-08-01 15:52:07  INFO      src.evaluation: MLflow: logged run for random_forest_underweight
+2026-08-01 15:52:28  INFO      src.evaluation: wasted: recall=0.987 f1=0.837 roc_auc=0.994
+2026-08-01 15:52:28  INFO      src.evaluation: MLflow: logged run for random_forest_wasted
+2026-08-01 15:52:32  INFO      src.evaluation: stunted: recall=0.982 f1=0.970 roc_auc=0.999
+2026-08-01 15:52:32  INFO      src.evaluation: MLflow: logged run for xgb_single_stunted
+2026-08-01 15:52:34  INFO      src.evaluation: underweight: recall=0.988 f1=0.969 roc_auc=0.999
+2026-08-01 15:52:34  INFO      src.evaluation: MLflow: logged run for xgb_single_underweight
+2026-08-01 15:52:38  INFO      src.evaluation: wasted: recall=0.997 f1=0.958 roc_auc=0.999
+2026-08-01 15:52:38  INFO      src.evaluation: MLflow: logged run for xgb_single_wasted
+2026-08-01 15:52:38  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/baseline_benchmark.csv
+2026-08-01 15:52:48  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 15:52:48  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 15:52:48  INFO      __main__: Class weights: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 15:53:03  INFO      src.evaluation: stunted: recall=0.992 f1=0.965 roc_auc=0.998
+2026-08-01 15:53:03  INFO      src.evaluation: underweight: recall=0.992 f1=0.964 roc_auc=0.999
+2026-08-01 15:53:03  INFO      src.evaluation: wasted: recall=0.991 f1=0.963 roc_auc=0.999
+2026-08-01 15:53:03  INFO      src.evaluation: Macro avg: recall=0.992
+2026-08-01 15:53:03  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl  (5.1 MB)
+2026-08-01 15:53:04  INFO      src.evaluation: MLflow: logged run for mltp_xgb
+2026-08-01 15:53:41  INFO      src.evaluation: stunted: recall=0.987 f1=0.968 roc_auc=0.999
+2026-08-01 15:53:41  INFO      src.evaluation: underweight: recall=0.986 f1=0.969 roc_auc=0.999
+2026-08-01 15:53:41  INFO      src.evaluation: wasted: recall=0.989 f1=0.973 roc_auc=1.000
+2026-08-01 15:53:41  INFO      src.evaluation: Macro avg: recall=0.987
+2026-08-01 15:53:41  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_lgbm_v1.pkl  (8.3 MB)
+2026-08-01 15:53:41  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/full_benchmark.csv
+2026-08-01 15:55:20  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 15:57:05  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-08-01 15:57:06  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 15:57:13  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_stunted.png
+2026-08-01 15:57:13  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_underweight.png
+2026-08-01 15:57:13  INFO      src.explainability: Summary plot saved: /workspaces/malnutrisense/reports/figures/shap/summary_wasted.png
+2026-08-01 15:57:18  INFO      src.explainability: Waterfall plot saved: /workspaces/malnutrisense/reports/figures/shap/waterfall_stunted_row12704.png
+2026-08-01 15:57:20  INFO      src.explainability: Waterfall plot saved: /workspaces/malnutrisense/reports/figures/shap/waterfall_stunted_row360.png
+2026-08-01 15:57:21  INFO      src.explainability: Waterfall plot saved: /workspaces/malnutrisense/reports/figures/shap/waterfall_stunted_row12848.png
+2026-08-01 15:57:21  INFO      src.explainability: Top 3 features for stunted: ['num__hw3', 'num__hw1', 'num__b4']
+2026-08-01 15:57:23  INFO      src.explainability: Dependence plot saved: /workspaces/malnutrisense/reports/figures/shap/dependence_stunted_num__hw3.png
+2026-08-01 15:57:24  INFO      src.explainability: Dependence plot saved: /workspaces/malnutrisense/reports/figures/shap/dependence_stunted_num__hw1.png
+2026-08-01 15:57:26  INFO      src.explainability: Dependence plot saved: /workspaces/malnutrisense/reports/figures/shap/dependence_stunted_num__b4.png
+2026-08-01 15:57:27  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-08-01 15:57:27  INFO      src.fairness: stunted/wealth_quintile: FNR overall=0.008
+2026-08-01 15:57:27  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-01 15:57:28  INFO      src.fairness: stunted/aspirational_dist: FNR overall=0.008
+2026-08-01 15:57:28  INFO      src.fairness: underweight/wealth_quintile: FNR overall=0.008
+2026-08-01 15:57:28  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-01 15:57:29  INFO      src.fairness: underweight/aspirational_dist: FNR overall=0.008
+2026-08-01 15:57:29  INFO      src.fairness: wasted/wealth_quintile: FNR overall=0.009
+2026-08-01 15:57:29  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-01 15:57:30  INFO      src.fairness: wasted/aspirational_dist: FNR overall=0.009
+2026-08-01 15:57:30  INFO      src.fairness: Equity report: 18 rows
+2026-08-01 15:57:30  INFO      src.fairness: Equity report saved: /workspaces/malnutrisense/reports/tables/equity_audit.csv
+2026-08-01 15:58:02  INFO      01_data_loading: Loaded: 228,356 rows x 17 columns
+2026-08-01 15:58:07  INFO      src.validation: stunted: 35.5%  (threshold 30%–42%)
+2026-08-01 15:58:07  INFO      src.validation: underweight: 30.9%  (threshold 30%–35%)
+2026-08-01 15:58:07  INFO      src.validation: wasted: 18.6%  (threshold 17%–22%)
+2026-08-01 15:58:07  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-08-01 15:58:08  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-08-01 15:58:24  INFO      01_data_loading: Loaded: 228,356 rows x 17 columns
+2026-08-01 15:58:30  INFO      src.validation: stunted: 35.5%  (threshold 30%–42%)
+2026-08-01 15:58:30  INFO      src.validation: underweight: 30.9%  (threshold 30%–35%)
+2026-08-01 15:58:30  INFO      src.validation: wasted: 18.6%  (threshold 17%–22%)
+2026-08-01 15:58:30  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-08-01 15:58:31  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-08-01 15:59:01  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 15:59:02  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 15:59:20  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 15:59:20  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 15:59:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:59:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:59:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:59:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 15:59:49  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 15:59:49  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 15:59:54  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 15:59:54  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 15:59:54  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 15:59:54  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 15:59:54  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 15:59:54  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 15:59:54  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 15:59:54  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 15:59:54  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 15:59:54  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 15:59:55  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 15:59:55  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 15:59:55  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 15:59:55  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 15:59:55  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 15:59:55  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 15:59:55  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:10:11  INFO      __main__: Loading train/test splits...
+2026-08-01 16:10:11  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 16:10:11  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:10:12  INFO      src.evaluation: stunted: recall=0.845 f1=0.791 roc_auc=0.922
+2026-08-01 16:10:12  INFO      src.evaluation: MLflow: logged run for logistic_stunted
+2026-08-01 16:10:13  INFO      src.evaluation: underweight: recall=0.924 f1=0.849 roc_auc=0.962
+2026-08-01 16:10:13  INFO      src.evaluation: MLflow: logged run for logistic_underweight
+2026-08-01 16:10:14  INFO      src.evaluation: wasted: recall=0.975 f1=0.899 roc_auc=0.995
+2026-08-01 16:10:14  INFO      src.evaluation: MLflow: logged run for logistic_wasted
+2026-08-01 16:10:36  INFO      src.evaluation: stunted: recall=0.961 f1=0.908 roc_auc=0.987
+2026-08-01 16:10:36  INFO      src.evaluation: MLflow: logged run for random_forest_stunted
+2026-08-01 16:10:57  INFO      src.evaluation: underweight: recall=0.959 f1=0.867 roc_auc=0.986
+2026-08-01 16:10:57  INFO      src.evaluation: MLflow: logged run for random_forest_underweight
+2026-08-01 16:11:18  INFO      src.evaluation: wasted: recall=0.987 f1=0.837 roc_auc=0.994
+2026-08-01 16:11:18  INFO      src.evaluation: MLflow: logged run for random_forest_wasted
+2026-08-01 16:11:21  INFO      src.evaluation: stunted: recall=0.982 f1=0.970 roc_auc=0.999
+2026-08-01 16:11:21  INFO      src.evaluation: MLflow: logged run for xgb_single_stunted
+2026-08-01 16:11:24  INFO      src.evaluation: underweight: recall=0.988 f1=0.969 roc_auc=0.999
+2026-08-01 16:11:24  INFO      src.evaluation: MLflow: logged run for xgb_single_underweight
+2026-08-01 16:11:28  INFO      src.evaluation: wasted: recall=0.997 f1=0.958 roc_auc=0.999
+2026-08-01 16:11:28  INFO      src.evaluation: MLflow: logged run for xgb_single_wasted
+2026-08-01 16:11:28  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/baseline_benchmark.csv
+2026-08-01 16:12:07  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:12:08  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:12:08  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:12:08  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-01 16:12:54  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:12:54  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:12:54  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:12:54  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:12:54  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:12:54  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:12:59  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:13:00  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:13:00  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:13:00  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-01 16:13:04  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:13:04  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:13:05  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:13:05  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:13:05  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:13:05  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:13:05  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:13:05  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:13:05  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:13:05  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:13:06  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:13:06  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:13:06  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:13:06  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:13:06  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:13:06  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-2/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:13:06  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-2/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:13:33  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 16:13:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:13:33  INFO      __main__: Class weights: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:13:50  INFO      src.evaluation: stunted: recall=0.992 f1=0.965 roc_auc=0.998
+2026-08-01 16:13:50  INFO      src.evaluation: underweight: recall=0.992 f1=0.964 roc_auc=0.999
+2026-08-01 16:13:50  INFO      src.evaluation: wasted: recall=0.991 f1=0.963 roc_auc=0.999
+2026-08-01 16:13:50  INFO      src.evaluation: Macro avg: recall=0.992
+2026-08-01 16:13:50  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl  (5.1 MB)
+2026-08-01 16:13:50  INFO      src.evaluation: MLflow: logged run for mltp_xgb
+2026-08-01 16:14:28  INFO      src.evaluation: stunted: recall=0.987 f1=0.968 roc_auc=0.999
+2026-08-01 16:14:28  INFO      src.evaluation: underweight: recall=0.986 f1=0.969 roc_auc=0.999
+2026-08-01 16:14:28  INFO      src.evaluation: wasted: recall=0.989 f1=0.973 roc_auc=1.000
+2026-08-01 16:14:28  INFO      src.evaluation: Macro avg: recall=0.987
+2026-08-01 16:14:29  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_lgbm_v1.pkl  (8.3 MB)
+2026-08-01 16:14:29  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/full_benchmark.csv
+2026-08-01 16:14:42  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:14:43  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:15:01  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:15:01  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:16:07  INFO      src.model: Model loaded: models/mltp_xgb_v1.pkl
+2026-08-01 16:16:08  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:16:26  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:18:32  INFO      src.model: Model loaded: models/mltp_xgb_v1.pkl
+2026-08-01 16:18:33  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:18:51  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:18:51  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:18:51  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:18:51  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:19:44  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:19:45  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:20:06  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:20:06  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:20:07  INFO      __main__: Loading nfhs5_cleaned.csv...
+2026-08-01 16:20:07  INFO      src.validation: Row count check PASSED: 228,356
+2026-08-01 16:20:08  INFO      src.validation: Missing code check PASSED
+2026-08-01 16:20:08  INFO      src.validation: Z-score scale check PASSED
+2026-08-01 16:20:08  INFO      src.validation: Label binary check PASSED
+2026-08-01 16:20:08  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-08-01 16:20:08  INFO      src.validation: stunted: 35.5%  (threshold 30%–42%)
+2026-08-01 16:20:08  INFO      src.validation: underweight: 30.9%  (threshold 30%–35%)
+2026-08-01 16:20:08  INFO      src.validation: wasted: 18.6%  (threshold 17%–22%)
+2026-08-01 16:20:08  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-08-01 16:20:08  INFO      src.validation: validate_all_soft PASSED
+2026-08-01 16:20:08  INFO      __main__: Saved: reports/tables/validation_summary.csv
+2026-08-01 16:21:16  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:21:16  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:21:16  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:21:16  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:21:16  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:21:16  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:21:20  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:21:20  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:21:20  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:21:20  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:21:20  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:21:20  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:21:21  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:21:21  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:21:21  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:21:21  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:21:21  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:21:21  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:21:21  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:21:21  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:21:21  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:21:21  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-3/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:21:21  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-3/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:22:48  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:22:48  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:23:07  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:23:07  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:24:11  INFO      __main__: Environment validated
+2026-08-01 16:24:16  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:24:17  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:24:17  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:24:17  INFO      src.labels: WHO thresholds applied: stunted=-2.0, underweight=-2.0, wasted=-2.0
+2026-08-01 16:24:17  INFO      src.preprocessing: Starting full preprocessing pipeline...
+2026-08-01 16:24:17  INFO      src.preprocessing: Input: 232,920 rows x 17 columns
+2026-08-01 16:24:17  INFO      src.preprocessing: Duplicates removed: 3,872. Rows remaining: 229,048
+2026-08-01 16:24:17  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-08-01 16:24:17  INFO      src.preprocessing: Categorical encoding applied to: []
+2026-08-01 16:24:17  INFO      src.preprocessing: Median imputation applied to 11 numeric columns
+2026-08-01 16:24:17  INFO      src.preprocessing: Not imputed (protected): ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+2026-08-01 16:24:17  WARNING   src.preprocessing: M19 (birth weight) column not found — skipping outlier cap
+2026-08-01 16:24:17  WARNING   src.preprocessing: No SDI components found — skipping index construction
+2026-08-01 16:24:18  INFO      src.preprocessing: Duplicates removed: 692. Rows remaining: 228,356
+2026-08-01 16:24:18  INFO      src.preprocessing: Pipeline complete. Output: 228,356 rows x 17 columns
+2026-08-01 16:24:18  INFO      src.labels: Label validation: PASSED
+2026-08-01 16:24:18  INFO      src.labels: ─── Label Audit ───
+2026-08-01 16:24:18  INFO      src.labels:   stunted: 35.5% prevalence
+2026-08-01 16:24:18  INFO      src.labels:   underweight: 30.9% prevalence
+2026-08-01 16:24:18  INFO      src.labels:   wasted: 18.6% prevalence
+2026-08-01 16:24:18  INFO      src.labels:   stunted: scale_pos_weight = 1.7864
+2026-08-01 16:24:18  INFO      src.labels:   underweight: scale_pos_weight = 2.4099
+2026-08-01 16:24:18  INFO      src.labels:   wasted: scale_pos_weight = 4.3937
+2026-08-01 16:24:19  WARNING   src.preprocessing: Dropped 29,560 rows with missing target labels before train/test split.
+2026-08-01 16:24:20  INFO      src.preprocessing: Train/test split: 159,036 train | 39,760 test (20% test, stratified on stunted)
+2026-08-01 16:24:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:24:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:24:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:24:49  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:24:49  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:24:49  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:24:54  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:24:55  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:24:55  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:24:55  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-01 16:25:00  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:25:00  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:25:00  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:25:00  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:25:01  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:25:01  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:25:01  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:25:01  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:25:01  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:25:01  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:25:01  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:25:01  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:25:01  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:25:01  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:25:01  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:25:01  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-4/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:25:01  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-4/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:26:07  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:26:07  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:26:26  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:26:26  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:26:26  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:26:26  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:27:06  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:27:07  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:27:25  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:27:25  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:28:01  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:28:01  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:28:22  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:28:22  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:28:22  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:28:22  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:28:41  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:28:42  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:29:01  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:29:01  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:29:01  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:29:01  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:29:14  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:29:14  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:29:14  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:29:14  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:29:14  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:29:14  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:29:20  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:29:20  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:29:21  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:29:21  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-01 16:29:26  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:29:26  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:29:26  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:29:26  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:29:26  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:29:26  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:29:27  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:29:27  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:29:27  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:29:27  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:29:27  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:29:27  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:29:27  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:29:27  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:29:27  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:29:27  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-8/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:29:27  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-8/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:29:28  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:29:30  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:29:48  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:29:48  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:29:48  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:29:48  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:29:53  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:29:53  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:30:12  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:30:12  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:30:12  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:30:12  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:30:50  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:30:50  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:30:50  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:30:50  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:30:50  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:30:50  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:30:55  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:30:55  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:30:55  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:30:55  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:30:55  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:30:55  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:30:56  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:30:56  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:30:56  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:30:56  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:30:56  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:30:56  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:30:56  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:30:56  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:30:56  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:30:56  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-9/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:30:56  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-9/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:31:18  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:31:18  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:31:18  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:31:18  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:31:18  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:31:18  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:31:23  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:31:23  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:31:23  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:31:23  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:31:23  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:31:23  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:31:24  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:31:24  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:31:24  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:31:24  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:31:24  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:31:24  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:31:24  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:31:24  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:31:24  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:31:24  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-10/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:31:24  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-10/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:32:39  INFO      scripts.generate_report: Loading nfhs5_cleaned.csv...
+2026-08-01 16:32:39  INFO      src.validation: Row count check PASSED: 228,356
+2026-08-01 16:32:39  INFO      src.validation: Missing code check PASSED
+2026-08-01 16:32:39  INFO      src.validation: Z-score scale check PASSED
+2026-08-01 16:32:40  INFO      src.validation: Label binary check PASSED
+2026-08-01 16:32:40  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-08-01 16:32:40  INFO      src.validation: stunted: 35.5%  (threshold 30%–42%)
+2026-08-01 16:32:40  INFO      src.validation: underweight: 30.9%  (threshold 30%–35%)
+2026-08-01 16:32:40  INFO      src.validation: wasted: 18.6%  (threshold 17%–22%)
+2026-08-01 16:32:40  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-08-01 16:32:40  INFO      src.validation: validate_all_soft PASSED
+2026-08-01 16:32:40  INFO      scripts.generate_report: Saved: reports/tables/validation_summary.csv
+2026-08-01 16:32:41  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:32:41  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:33:00  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:33:00  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:33:00  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:33:00  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:33:31  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:33:32  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:33:32  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:33:32  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-01 16:34:03  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:34:04  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:34:04  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:34:04  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-01 16:34:07  INFO      __main__: Environment validated
+2026-08-01 16:34:10  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:34:11  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:34:11  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:34:11  INFO      src.labels: WHO thresholds applied: stunted=-2.0, underweight=-2.0, wasted=-2.0
+2026-08-01 16:34:11  INFO      src.preprocessing: Starting full preprocessing pipeline...
+2026-08-01 16:34:11  INFO      src.preprocessing: Input: 232,920 rows x 17 columns
+2026-08-01 16:34:11  INFO      src.preprocessing: Duplicates removed: 3,872. Rows remaining: 229,048
+2026-08-01 16:34:11  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-08-01 16:34:11  INFO      src.preprocessing: Categorical encoding applied to: []
+2026-08-01 16:34:12  INFO      src.preprocessing: Median imputation applied to 11 numeric columns
+2026-08-01 16:34:12  INFO      src.preprocessing: Not imputed (protected): ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+2026-08-01 16:34:12  WARNING   src.preprocessing: M19 (birth weight) column not found — skipping outlier cap
+2026-08-01 16:34:12  WARNING   src.preprocessing: No SDI components found — skipping index construction
+2026-08-01 16:34:12  INFO      src.preprocessing: Duplicates removed: 692. Rows remaining: 228,356
+2026-08-01 16:34:12  INFO      src.preprocessing: Pipeline complete. Output: 228,356 rows x 17 columns
+2026-08-01 16:34:12  INFO      src.labels: Label validation: PASSED
+2026-08-01 16:34:12  INFO      src.labels: ─── Label Audit ───
+2026-08-01 16:34:12  INFO      src.labels:   stunted: 35.5% prevalence
+2026-08-01 16:34:12  INFO      src.labels:   underweight: 30.9% prevalence
+2026-08-01 16:34:12  INFO      src.labels:   wasted: 18.6% prevalence
+2026-08-01 16:34:12  INFO      src.labels:   stunted: scale_pos_weight = 1.7864
+2026-08-01 16:34:12  INFO      src.labels:   underweight: scale_pos_weight = 2.4099
+2026-08-01 16:34:12  INFO      src.labels:   wasted: scale_pos_weight = 4.3937
+2026-08-01 16:34:14  WARNING   src.preprocessing: Dropped 29,560 rows with missing target labels before train/test split.
+2026-08-01 16:34:14  INFO      src.preprocessing: Train/test split: 159,036 train | 39,760 test (20% test, stratified on stunted)
+2026-08-01 16:34:19  INFO      __main__: Loading train/test splits...
+2026-08-01 16:34:19  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 16:34:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:34:19  INFO      src.evaluation: stunted: recall=0.845 f1=0.791 roc_auc=0.922
+2026-08-01 16:34:20  INFO      src.evaluation: MLflow: logged run for logistic_stunted
+2026-08-01 16:34:21  INFO      src.evaluation: underweight: recall=0.924 f1=0.849 roc_auc=0.962
+2026-08-01 16:34:21  INFO      src.evaluation: MLflow: logged run for logistic_underweight
+2026-08-01 16:34:21  INFO      src.evaluation: wasted: recall=0.975 f1=0.899 roc_auc=0.995
+2026-08-01 16:34:21  INFO      src.evaluation: MLflow: logged run for logistic_wasted
+2026-08-01 16:34:44  INFO      src.evaluation: stunted: recall=0.961 f1=0.908 roc_auc=0.987
+2026-08-01 16:34:44  INFO      src.evaluation: MLflow: logged run for random_forest_stunted
+2026-08-01 16:35:05  INFO      src.evaluation: underweight: recall=0.959 f1=0.867 roc_auc=0.986
+2026-08-01 16:35:05  INFO      src.evaluation: MLflow: logged run for random_forest_underweight
+2026-08-01 16:35:27  INFO      src.evaluation: wasted: recall=0.987 f1=0.837 roc_auc=0.994
+2026-08-01 16:35:27  INFO      src.evaluation: MLflow: logged run for random_forest_wasted
+2026-08-01 16:35:30  INFO      src.evaluation: stunted: recall=0.982 f1=0.970 roc_auc=0.999
+2026-08-01 16:35:30  INFO      src.evaluation: MLflow: logged run for xgb_single_stunted
+2026-08-01 16:35:34  INFO      src.evaluation: underweight: recall=0.988 f1=0.969 roc_auc=0.999
+2026-08-01 16:35:34  INFO      src.evaluation: MLflow: logged run for xgb_single_underweight
+2026-08-01 16:35:37  INFO      src.evaluation: wasted: recall=0.997 f1=0.958 roc_auc=0.999
+2026-08-01 16:35:37  INFO      src.evaluation: MLflow: logged run for xgb_single_wasted
+2026-08-01 16:35:37  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/baseline_benchmark.csv
+2026-08-01 16:35:40  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 16:35:40  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:35:40  INFO      __main__: Class weights: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:35:56  INFO      src.evaluation: stunted: recall=0.992 f1=0.965 roc_auc=0.998
+2026-08-01 16:35:56  INFO      src.evaluation: underweight: recall=0.992 f1=0.964 roc_auc=0.999
+2026-08-01 16:35:56  INFO      src.evaluation: wasted: recall=0.991 f1=0.963 roc_auc=0.999
+2026-08-01 16:35:56  INFO      src.evaluation: Macro avg: recall=0.992
+2026-08-01 16:35:56  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl  (5.1 MB)
+2026-08-01 16:35:56  INFO      src.evaluation: MLflow: logged run for mltp_xgb
+2026-08-01 16:36:31  INFO      src.evaluation: stunted: recall=0.987 f1=0.968 roc_auc=0.999
+2026-08-01 16:36:31  INFO      src.evaluation: underweight: recall=0.986 f1=0.969 roc_auc=0.999
+2026-08-01 16:36:31  INFO      src.evaluation: wasted: recall=0.989 f1=0.973 roc_auc=1.000
+2026-08-01 16:36:31  INFO      src.evaluation: Macro avg: recall=0.987
+2026-08-01 16:36:31  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_lgbm_v1.pkl  (8.3 MB)
+2026-08-01 16:36:31  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/full_benchmark.csv
+2026-08-01 16:36:33  INFO      __main__: Loading nfhs5_cleaned.csv...
+2026-08-01 16:36:34  INFO      src.validation: Row count check PASSED: 228,356
+2026-08-01 16:36:35  INFO      src.validation: Missing code check PASSED
+2026-08-01 16:36:35  INFO      src.validation: Z-score scale check PASSED
+2026-08-01 16:36:35  INFO      src.validation: Label binary check PASSED
+2026-08-01 16:36:35  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-08-01 16:36:35  INFO      src.validation: stunted: 35.5%  (threshold 30%–42%)
+2026-08-01 16:36:35  INFO      src.validation: underweight: 30.9%  (threshold 30%–35%)
+2026-08-01 16:36:35  INFO      src.validation: wasted: 18.6%  (threshold 17%–22%)
+2026-08-01 16:36:35  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-08-01 16:36:35  INFO      src.validation: validate_all_soft PASSED
+2026-08-01 16:36:35  INFO      __main__: Saved: reports/tables/validation_summary.csv
+2026-08-01 16:36:38  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:36:39  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:36:58  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:36:58  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:36:58  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:36:58  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:37:36  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:37:36  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:37:36  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:37:36  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:37:36  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:37:36  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:37:40  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:37:40  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:37:41  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:37:41  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:37:41  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:37:41  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:37:41  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:37:41  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:37:41  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:37:41  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:37:41  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:37:41  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:37:41  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:37:41  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:37:41  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:37:41  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-11/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:37:41  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-11/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:44:45  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:44:46  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:44:46  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:44:46  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-01 16:45:15  INFO      __main__: Environment validated
+2026-08-01 16:45:21  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-01 16:45:22  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-01 16:45:22  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-01 16:45:22  INFO      src.labels: WHO thresholds applied: stunted=-2.0, underweight=-2.0, wasted=-2.0
+2026-08-01 16:45:22  INFO      src.preprocessing: Starting full preprocessing pipeline...
+2026-08-01 16:45:22  INFO      src.preprocessing: Input: 232,920 rows x 17 columns
+2026-08-01 16:45:22  INFO      src.preprocessing: Duplicates removed: 3,872. Rows remaining: 229,048
+2026-08-01 16:45:22  WARNING   src.preprocessing: No SC/ST column found. Searched: ['V131', 'S116', 'SH46', 'V130']. Fairness audit for Scheduled Tribe subgroup will be unavailable. Consider requesting the Household Members Recode (PR) file from DHS.
+2026-08-01 16:45:22  INFO      src.preprocessing: Categorical encoding applied to: []
+2026-08-01 16:45:23  INFO      src.preprocessing: Median imputation applied to 11 numeric columns
+2026-08-01 16:45:23  INFO      src.preprocessing: Not imputed (protected): ['HAZ', 'WAZ', 'WHZ', 'stunted', 'underweight', 'wasted']
+2026-08-01 16:45:23  WARNING   src.preprocessing: M19 (birth weight) column not found — skipping outlier cap
+2026-08-01 16:45:23  WARNING   src.preprocessing: No SDI components found — skipping index construction
+2026-08-01 16:45:23  INFO      src.preprocessing: Duplicates removed: 692. Rows remaining: 228,356
+2026-08-01 16:45:23  INFO      src.preprocessing: Pipeline complete. Output: 228,356 rows x 17 columns
+2026-08-01 16:45:23  INFO      src.labels: Label validation: PASSED
+2026-08-01 16:45:23  INFO      src.labels: ─── Label Audit ───
+2026-08-01 16:45:23  INFO      src.labels:   stunted: 35.5% prevalence
+2026-08-01 16:45:23  INFO      src.labels:   underweight: 30.9% prevalence
+2026-08-01 16:45:23  INFO      src.labels:   wasted: 18.6% prevalence
+2026-08-01 16:45:23  INFO      src.labels:   stunted: scale_pos_weight = 1.7864
+2026-08-01 16:45:23  INFO      src.labels:   underweight: scale_pos_weight = 2.4099
+2026-08-01 16:45:23  INFO      src.labels:   wasted: scale_pos_weight = 4.3937
+2026-08-01 16:45:25  WARNING   src.preprocessing: Dropped 29,560 rows with missing target labels before train/test split.
+2026-08-01 16:45:25  INFO      src.preprocessing: Train/test split: 159,036 train | 39,760 test (20% test, stratified on stunted)
+2026-08-01 16:45:36  INFO      __main__: Loading train/test splits...
+2026-08-01 16:45:37  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 16:45:37  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:45:37  INFO      src.evaluation: stunted: recall=0.845 f1=0.791 roc_auc=0.922
+2026-08-01 16:45:38  INFO      src.evaluation: MLflow: logged run for logistic_stunted
+2026-08-01 16:45:40  INFO      src.evaluation: underweight: recall=0.924 f1=0.849 roc_auc=0.962
+2026-08-01 16:45:40  INFO      src.evaluation: MLflow: logged run for logistic_underweight
+2026-08-01 16:45:41  INFO      src.evaluation: wasted: recall=0.975 f1=0.899 roc_auc=0.995
+2026-08-01 16:45:41  INFO      src.evaluation: MLflow: logged run for logistic_wasted
+2026-08-01 16:46:04  INFO      src.evaluation: stunted: recall=0.961 f1=0.908 roc_auc=0.987
+2026-08-01 16:46:04  INFO      src.evaluation: MLflow: logged run for random_forest_stunted
+2026-08-01 16:46:26  INFO      src.evaluation: underweight: recall=0.959 f1=0.867 roc_auc=0.986
+2026-08-01 16:46:26  INFO      src.evaluation: MLflow: logged run for random_forest_underweight
+2026-08-01 16:46:48  INFO      src.evaluation: wasted: recall=0.987 f1=0.837 roc_auc=0.994
+2026-08-01 16:46:48  INFO      src.evaluation: MLflow: logged run for random_forest_wasted
+2026-08-01 16:46:51  INFO      src.evaluation: stunted: recall=0.982 f1=0.970 roc_auc=0.999
+2026-08-01 16:46:51  INFO      src.evaluation: MLflow: logged run for xgb_single_stunted
+2026-08-01 16:46:54  INFO      src.evaluation: underweight: recall=0.988 f1=0.969 roc_auc=0.999
+2026-08-01 16:46:54  INFO      src.evaluation: MLflow: logged run for xgb_single_underweight
+2026-08-01 16:46:57  INFO      src.evaluation: wasted: recall=0.997 f1=0.958 roc_auc=0.999
+2026-08-01 16:46:57  INFO      src.evaluation: MLflow: logged run for xgb_single_wasted
+2026-08-01 16:46:57  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/baseline_benchmark.csv
+2026-08-01 16:47:04  INFO      __main__: Train: 159,036 rows  |  Test: 39,760 rows
+2026-08-01 16:47:04  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:47:04  INFO      __main__: Class weights: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-01 16:47:20  INFO      src.evaluation: stunted: recall=0.992 f1=0.965 roc_auc=0.998
+2026-08-01 16:47:20  INFO      src.evaluation: underweight: recall=0.992 f1=0.964 roc_auc=0.999
+2026-08-01 16:47:20  INFO      src.evaluation: wasted: recall=0.991 f1=0.963 roc_auc=0.999
+2026-08-01 16:47:20  INFO      src.evaluation: Macro avg: recall=0.992
+2026-08-01 16:47:20  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl  (5.1 MB)
+2026-08-01 16:47:21  INFO      src.evaluation: MLflow: logged run for mltp_xgb
+2026-08-01 16:48:00  INFO      src.evaluation: stunted: recall=0.987 f1=0.968 roc_auc=0.999
+2026-08-01 16:48:00  INFO      src.evaluation: underweight: recall=0.986 f1=0.969 roc_auc=0.999
+2026-08-01 16:48:00  INFO      src.evaluation: wasted: recall=0.989 f1=0.973 roc_auc=1.000
+2026-08-01 16:48:00  INFO      src.evaluation: Macro avg: recall=0.987
+2026-08-01 16:48:00  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_lgbm_v1.pkl  (8.3 MB)
+2026-08-01 16:48:00  INFO      src.evaluation: Benchmark saved: /workspaces/malnutrisense/reports/tables/full_benchmark.csv
+2026-08-01 16:48:02  INFO      __main__: Loading nfhs5_cleaned.csv...
+2026-08-01 16:48:02  INFO      src.validation: Row count check PASSED: 228,356
+2026-08-01 16:48:03  INFO      src.validation: Missing code check PASSED
+2026-08-01 16:48:03  INFO      src.validation: Z-score scale check PASSED
+2026-08-01 16:48:03  INFO      src.validation: Label binary check PASSED
+2026-08-01 16:48:03  INFO      src.validation: Duplicate check PASSED: 0 duplicates
+2026-08-01 16:48:03  INFO      src.validation: stunted: 35.5%  (threshold 30%–42%)
+2026-08-01 16:48:03  INFO      src.validation: underweight: 30.9%  (threshold 30%–35%)
+2026-08-01 16:48:03  INFO      src.validation: wasted: 18.6%  (threshold 17%–22%)
+2026-08-01 16:48:03  INFO      src.validation: Prevalence check PASSED for all three phenotypes
+2026-08-01 16:48:03  INFO      src.validation: validate_all_soft PASSED
+2026-08-01 16:48:03  INFO      __main__: Saved: reports/tables/validation_summary.csv
+2026-08-01 16:48:08  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:48:09  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:48:29  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:48:29  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:48:29  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:48:29  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:49:37  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:49:38  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:49:59  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:49:59  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:49:59  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:49:59  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:50:03  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-01 16:50:04  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-01 16:50:24  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-01 16:50:24  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:50:24  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-01 16:50:24  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-01 16:51:42  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:51:42  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:51:42  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:51:42  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:51:42  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:51:42  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:51:47  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:51:47  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:51:47  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:51:47  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:51:47  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:51:47  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:51:48  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:51:48  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:51:48  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:51:48  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:51:48  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:51:48  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:51:48  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:51:48  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:51:48  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:51:48  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-13/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:51:48  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-13/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:52:09  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:52:09  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:52:09  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:52:13  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:52:14  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:52:14  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:52:14  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:52:14  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:52:14  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:52:14  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:52:14  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:52:14  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:52:14  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:52:15  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:52:15  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:52:15  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:52:15  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:52:15  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:52:15  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-14/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:52:15  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-14/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 16:54:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:54:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:54:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:54:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 16:54:53  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 16:54:53  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 16:54:58  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:54:58  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:54:59  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:54:59  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:54:59  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:54:59  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:54:59  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:54:59  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:54:59  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:54:59  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:54:59  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 16:54:59  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 16:54:59  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 16:54:59  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 16:54:59  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 16:54:59  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-15/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 16:54:59  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-15/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 17:01:23  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:01:23  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:01:23  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:01:23  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:01:23  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 17:01:23  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 17:01:28  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:01:28  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:01:28  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:01:28  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:01:28  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:01:28  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:01:28  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:01:28  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:01:28  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:01:28  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:01:29  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:01:29  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:01:29  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:01:29  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:01:29  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:01:29  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-16/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 17:01:29  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-16/test_save_and_load_roundtrip0/test_model.pkl

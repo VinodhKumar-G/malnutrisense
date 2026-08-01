@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/malnutrisense/mlruns/0/767dd7b7b8dd4f719184c044b5e37696/artifacts
+end_time: 1785602137311
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 767dd7b7b8dd4f719184c044b5e37696
+run_name: xgb_single_wasted
+run_uuid: 767dd7b7b8dd4f719184c044b5e37696
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785602137294
+status: 3
+tags: []
+user_id: codespace

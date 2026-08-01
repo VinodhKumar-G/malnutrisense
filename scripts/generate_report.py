@@ -38,6 +38,13 @@ def _write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'a', encoding='utf-8') as f:
         f.write(text)
+
+
+def _reset(path: Path) -> None:
+    """Start a fresh report for the current run."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write('')
  
  
 def _divider(path: Path, char: str = '─', width: int = 70) -> None:
@@ -47,6 +54,7 @@ def _divider(path: Path, char: str = '─', width: int = 70) -> None:
 def generate_report() -> bool:
     """Generate the validation report. Returns True if all checks pass."""
     rpt = VALIDATION_REPORT_PATH
+    _reset(rpt)
     ts  = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')
  
     # Header

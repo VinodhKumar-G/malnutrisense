@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/malnutrisense/mlruns/0/b058750364b743a4b46488ba785602ad/artifacts
+end_time: 1785602740518
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b058750364b743a4b46488ba785602ad
+run_name: logistic_underweight
+run_uuid: b058750364b743a4b46488ba785602ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1785602740503
+status: 3
+tags: []
+user_id: codespace
