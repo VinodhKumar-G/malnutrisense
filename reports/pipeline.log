@@ -1699,3 +1699,65 @@
 2026-08-01 17:01:29  INFO      src.evaluation: Macro avg: recall=0.355
 2026-08-01 17:01:29  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-16/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
 2026-08-01 17:01:29  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-16/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 17:03:03  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:03:03  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:03:03  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:03:03  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:03:03  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 17:03:03  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 17:03:08  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:03:08  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:03:09  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:03:09  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:03:09  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:03:09  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:03:09  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:03:09  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:03:09  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:03:09  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:03:09  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:03:09  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:03:09  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:03:09  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:03:09  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:03:09  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-17/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 17:03:09  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-17/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-01 17:05:07  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:05:07  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:05:07  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:05:07  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-01 17:05:07  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-01 17:05:07  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-01 17:05:11  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:05:11  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:05:12  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:05:12  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:05:12  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:05:12  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:05:12  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:05:12  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:05:12  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:05:12  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:05:13  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-01 17:05:13  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-01 17:05:13  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-01 17:05:13  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-01 17:05:13  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-01 17:05:13  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-18/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-01 17:05:13  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-18/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-03 17:02:06  INFO      __main__: Loading cleaned NFHS-5 dataset...
+2026-08-03 17:02:11  INFO      __main__: Loaded: 228,356 rows
+2026-08-03 17:07:23  INFO      __main__: Loading cleaned NFHS-5 dataset...
+2026-08-03 17:07:23  INFO      __main__: Loaded: 228,356 rows
+2026-08-03 17:08:05  INFO      __main__: Loading cleaned NFHS-5 dataset...
+2026-08-03 17:08:05  INFO      __main__: Loaded: 228,356 rows
+2026-08-03 17:08:05  INFO      __main__: Saved: /workspaces/malnutrisense/reports/tables/district_prevalence.csv  (36 districts)
+2026-08-03 17:08:18  INFO      __main__: Loading cleaned NFHS-5 dataset...
+2026-08-03 17:08:18  INFO      __main__: Loaded: 228,356 rows
+2026-08-03 17:08:18  INFO      __main__: Saved: /workspaces/malnutrisense/reports/tables/district_prevalence.csv  (36 districts)
+2026-08-03 17:24:28  INFO      __main__: Loading raw NFHS-5 DTA with district identifiers...
+2026-08-03 17:24:33  INFO      __main__: Loaded: 232,920 rows
+2026-08-03 17:24:33  INFO      __main__: Saved: /workspaces/malnutrisense/reports/tables/district_prevalence.csv  (707 districts)
+2026-08-03 17:25:25  INFO      __main__: Loading raw NFHS-5 DTA with district identifiers...
+2026-08-03 17:25:29  INFO      __main__: Loaded: 232,920 rows
+2026-08-03 17:25:29  INFO      __main__: Saved: /workspaces/malnutrisense/reports/tables/district_prevalence.csv  (707 districts)
