@@ -1,0 +1,3 @@
+model,macro_recall,stunted_recall,improvement
+MLTP_no_satellite,0.9915333333333334,0.9919,0.0
+MLTP_with_satellite,0.9914,0.9913,-0.00013333333333342967

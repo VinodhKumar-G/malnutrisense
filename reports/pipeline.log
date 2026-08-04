@@ -1789,3 +1789,13 @@
 2026-08-04 15:46:06  INFO      __main__: Satellite coverage: 90.2% of records
 2026-08-04 15:46:09  INFO      __main__: Saved: /workspaces/malnutrisense/data/processed/nfhs5_with_satellite.csv (228,356 rows, 21 cols)
 2026-08-04 15:46:09  INFO      __main__: Saved coverage report: /workspaces/malnutrisense/reports/tables/satellite_coverage.csv
+2026-08-04 15:57:57  INFO      __main__: Satellite dataset: 228,356 rows x 21 cols
+2026-08-04 15:57:57  INFO      __main__: After satellite NaN drop: 205,903 rows
+2026-08-04 15:57:57  WARNING   src.preprocessing: Dropped 26,453 rows with missing target labels before train/test split.
+2026-08-04 15:57:57  INFO      src.preprocessing: Train/test split: 143,560 train | 35,890 test (20% test, stratified on stunted)
+2026-08-04 15:57:57  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-04 15:58:13  INFO      src.evaluation: stunted: recall=0.991 f1=0.966 roc_auc=0.999
+2026-08-04 15:58:14  INFO      src.evaluation: underweight: recall=0.991 f1=0.966 roc_auc=0.999
+2026-08-04 15:58:14  INFO      src.evaluation: wasted: recall=0.992 f1=0.964 roc_auc=0.999
+2026-08-04 15:58:14  INFO      src.evaluation: Macro avg: recall=0.991
+2026-08-04 15:58:14  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl  (4.9 MB)
