@@ -52,16 +52,30 @@ class MalnutriSenseClient(fl.client.NumPyClient):
         log.info(f'Client [{state}] initialised: {len(X_train):,} local rows')
  
     def get_parameters(self, config) -> NDArrays:
-        """Return current model weights as list of NumPy arrays."""
+        """Return fixed-shape client parameters for Flower aggregation.
+
+        Note: Raw XGBoost boosters serialize to variable-length byte payloads,
+        which cannot be averaged with FedAvg. We therefore exchange one
+        fixed-length vector per label (feature importances).
+        """
         estimators = self.model.named_steps['clf'].estimators_
-        return [est.get_booster().save_raw('ubj') for est in estimators]
+        n_features = self.X_train.shape[1]
+        params: NDArrays = []
+        for est in estimators:
+            fi = getattr(est, 'feature_importances_', None)
+            if fi is None or len(fi) != n_features:
+                fi = np.zeros(n_features, dtype=np.float32)
+            params.append(np.asarray(fi, dtype=np.float32))
+        return params
  
     def set_parameters(self, parameters: NDArrays) -> None:
-        """Load aggregated global weights from server into local model."""
-        from xgboost import XGBClassifier
-        estimators = self.model.named_steps['clf'].estimators_
-        for i, (est, param) in enumerate(zip(estimators, parameters)):
-            est.get_booster().load_model(param)
+        """Accept aggregated parameters.
+
+        For the current MLTP-XGBoost setup, FedAvg parameters are used only as
+        a compatible exchange payload (feature-importance vectors). They are
+        not loaded back into the tree model.
+        """
+        return
  
     def fit(self, parameters: NDArrays, config: Dict[str, Scalar]):
         """Load global model, train locally for one round, return updated weights."""
