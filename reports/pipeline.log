@@ -1820,3 +1820,12 @@
 2026-08-04 16:33:08  INFO      __main__: NFHS-4 loaded: 259,627 rows
 2026-08-04 16:33:08  INFO      __main__: Velocity computed for 35 states
 2026-08-04 16:33:11  INFO      __main__: Velocity coverage: 99.8%
+2026-08-04 16:39:07  INFO      __main__: Velocity dataset: 227,828 rows
+2026-08-04 16:39:07  WARNING   src.preprocessing: Dropped 29,485 rows with missing target labels before train/test split.
+2026-08-04 16:39:07  INFO      src.preprocessing: Train/test split: 158,674 train | 39,669 test (20% test, stratified on stunted)
+2026-08-04 16:39:07  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-04 16:39:28  INFO      src.evaluation: stunted: recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-04 16:39:28  INFO      src.evaluation: underweight: recall=0.997 f1=0.996 roc_auc=1.000
+2026-08-04 16:39:28  INFO      src.evaluation: wasted: recall=0.999 f1=0.996 roc_auc=1.000
+2026-08-04 16:39:28  INFO      src.evaluation: Macro avg: recall=0.999
+2026-08-04 16:39:28  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl  (2.2 MB)
