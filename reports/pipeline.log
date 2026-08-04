@@ -1761,3 +1761,31 @@
 2026-08-03 17:25:25  INFO      __main__: Loading raw NFHS-5 DTA with district identifiers...
 2026-08-03 17:25:29  INFO      __main__: Loaded: 232,920 rows
 2026-08-03 17:25:29  INFO      __main__: Saved: /workspaces/malnutrisense/reports/tables/district_prevalence.csv  (707 districts)
+2026-08-03 18:05:13  INFO      __main__: GEE initialized
+2026-08-03 18:05:13  INFO      __main__: India districts loaded from GAUL
+2026-08-03 18:05:13  INFO      __main__: NDVI export task started. Check GEE Tasks tab for progress.
+2026-08-03 18:05:13  INFO      __main__: Download CSV from Google Drive when complete.
+2026-08-03 18:05:13  INFO      __main__: Save to: data/raw/external/ndvi_districts.csv
+2026-08-03 18:06:55  INFO      __main__: GEE initialized
+2026-08-03 18:06:55  INFO      __main__: India districts loaded from GAUL
+2026-08-03 18:06:56  INFO      __main__: NDVI export task started. Check GEE Tasks tab for progress.
+2026-08-03 18:06:56  INFO      __main__: Download CSV from Google Drive when complete.
+2026-08-03 18:06:56  INFO      __main__: Save to: data/raw/external/ndvi_districts.csv
+2026-08-04 15:34:24  INFO      __main__: Computing SPI-3...
+2026-08-04 15:34:25  INFO      __main__: SPI computed for 573 districts
+2026-08-04 15:34:29  INFO      __main__: NFHS-5 loaded: 228,356 rows
+2026-08-04 15:39:16  INFO      __main__: Computing SPI-3...
+2026-08-04 15:39:17  INFO      __main__: SPI computed for 573 districts
+2026-08-04 15:39:17  INFO      __main__: NFHS-5 loaded: 228,356 rows
+2026-08-04 15:45:43  INFO      __main__: Computing SPI-3...
+2026-08-04 15:45:44  INFO      __main__: SPI computed for 573 districts
+2026-08-04 15:45:44  INFO      __main__: NFHS-5 loaded: 228,356 rows
+2026-08-04 15:45:45  INFO      __main__: Satellite coverage: 90.2% of records
+2026-08-04 15:45:48  INFO      __main__: Saved: /workspaces/malnutrisense/data/processed/nfhs5_with_satellite.csv (228,356 rows, 21 cols)
+2026-08-04 15:45:48  INFO      __main__: Saved coverage report: /workspaces/malnutrisense/reports/tables/satellite_coverage.csv
+2026-08-04 15:46:04  INFO      __main__: Computing SPI-3...
+2026-08-04 15:46:05  INFO      __main__: SPI computed for 573 districts
+2026-08-04 15:46:05  INFO      __main__: NFHS-5 loaded: 228,356 rows
+2026-08-04 15:46:06  INFO      __main__: Satellite coverage: 90.2% of records
+2026-08-04 15:46:09  INFO      __main__: Saved: /workspaces/malnutrisense/data/processed/nfhs5_with_satellite.csv (228,356 rows, 21 cols)
+2026-08-04 15:46:09  INFO      __main__: Saved coverage report: /workspaces/malnutrisense/reports/tables/satellite_coverage.csv
