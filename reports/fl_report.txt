@@ -1,0 +1,44 @@
+
+======================================================================
+MALNUTRISENSE — FEDERATED LEARNING REPORT (Phase 4)
+Generated: 2026-08-05 03:19:29 UTC
+======================================================================
+
+SECTION 1: FEDERATED LEARNING ARCHITECTURE
+──────────────────────────────────────────────────────────────────────
+  Framework:      Flower (flwr)
+  Strategy:       FedAvg + FedProx (mu=0.1)
+  Nodes:          5 state nodes (UP, Bihar, MP, Rajasthan, Maharashtra)
+  Rounds:         10
+  Base model:     XGBoost MultiOutputClassifier (same as centralised MLTP)
+  Privacy claim:  Raw data never leaves state boundary
+
+SECTION 2: CONVERGENCE
+──────────────────────────────────────────────────────────────────────
+  Round  1: macro_recall = N/A
+  Round  2: macro_recall = N/A
+  Round  3: macro_recall = N/A
+  Round  4: macro_recall = N/A
+  Round  5: macro_recall = N/A
+  Round  6: macro_recall = N/A
+  Round  7: macro_recall = N/A
+  Round  8: macro_recall = N/A
+  Round  9: macro_recall = N/A
+  Round 10: macro_recall = N/A
+
+SECTION 3: PRIVACY-UTILITY TRADEOFF
+──────────────────────────────────────────────────────────────────────
+  centralised_mltp       macro_recall=0.9915  privacy=No privacy — all data centralised
+  federated_mltp         macro_recall=0.9912  privacy=Data never leaves state boundary
+
+  Recall gap: 0.0003
+  Verdict: PASS (threshold: 3% maximum acceptable gap)
+
+SECTION 4: FEDERATED MODEL FAIRNESS
+──────────────────────────────────────────────────────────────────────
+  centralised: 0 subgroups with FNR > 15%
+  federated: 0 subgroups with FNR > 15%
+
+======================================================================
+END OF FEDERATED LEARNING REPORT
+======================================================================
