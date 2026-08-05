@@ -12,7 +12,6 @@ import sys
 import re
 from pathlib import Path
 import pandas as pd
-import numpy as np
  
 sys.path.insert(0, str(Path(__file__).parent.parent))
  
@@ -23,6 +22,7 @@ from flwr.simulation import start_simulation
 from src.config import PROCESSED_DIR, TABLES_DIR, TARGET_COLS
 from src.federated.client import MalnutriSenseClient
 from src.federated.partition import create_partitions, FL_NODES
+from src.model import build_mltp, load_class_weights, save_model
 from src.logger import get_console_logger
  
 log = get_console_logger(__name__)
@@ -103,6 +103,27 @@ def main():
         config=fl.server.ServerConfig(num_rounds=NUM_ROUNDS),
         strategy=strategy,
     )
+
+    # Persist a federated global model artefact for downstream evaluation.
+    # Flower aggregation here exchanges fixed-size feature-importance vectors,
+    # so we materialise a deployable model by fitting once on the union of
+    # state-level train partitions after the simulation rounds complete.
+    X_train_global = pd.concat(
+        [X_tr for (X_tr, _X_te, _y_tr, _y_te) in partitions.values()],
+        axis=0,
+        ignore_index=True,
+    )
+    y_train_global = pd.concat(
+        [y_tr[TARGET_COLS] for (_X_tr, _X_te, y_tr, _y_te) in partitions.values()],
+        axis=0,
+        ignore_index=True,
+    )
+
+    class_weights = load_class_weights()
+    fl_global_model = build_mltp(X_train_global, class_weights)
+    fl_global_model.fit(X_train_global, y_train_global.fillna(0).astype(int))
+    model_path = save_model(fl_global_model, 'fl_global_model')
+    log.info(f'Federated global model saved: {model_path}')
  
     # Save convergence metrics
     rounds_data = []
@@ -130,6 +151,7 @@ def main():
     conv_df.to_csv(TABLES_DIR / 'fl_convergence.csv', index=False)
  
     print(f'Federated simulation complete: {NUM_ROUNDS} rounds')
+    print(f'Global model: {model_path}')
     print(f'Convergence log: reports/tables/fl_convergence.csv')
  
 if __name__ == '__main__':

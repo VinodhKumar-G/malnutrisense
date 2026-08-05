@@ -3196,3 +3196,1588 @@
 2026-08-04 17:08:28  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
 2026-08-04 17:08:28  INFO      src.evaluation: Macro avg: recall=0.625
 2026-08-04 17:08:28  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:40:52  INFO      __main__: National test set: 39,760 rows
+2026-08-05 02:41:41  INFO      __main__: Dataset loaded: 228,356 rows
+2026-08-05 02:41:41  INFO      src.federated.partition: Uttar_Pradesh: 34,330 rows
+2026-08-05 02:41:41  WARNING   src.preprocessing: Dropped 4,659 rows with missing target labels before train/test split.
+2026-08-05 02:41:41  INFO      src.preprocessing: Train/test split: 23,736 train | 5,935 test (20% test, stratified on stunted)
+2026-08-05 02:41:41  INFO      src.federated.partition: Bihar: 20,179 rows
+2026-08-05 02:41:41  WARNING   src.preprocessing: Dropped 2,443 rows with missing target labels before train/test split.
+2026-08-05 02:41:41  INFO      src.preprocessing: Train/test split: 14,188 train | 3,548 test (20% test, stratified on stunted)
+2026-08-05 02:41:41  INFO      src.federated.partition: Madhya_Pradesh: 15,847 rows
+2026-08-05 02:41:41  WARNING   src.preprocessing: Dropped 2,242 rows with missing target labels before train/test split.
+2026-08-05 02:41:41  INFO      src.preprocessing: Train/test split: 10,884 train | 2,721 test (20% test, stratified on stunted)
+2026-08-05 02:41:41  INFO      src.federated.partition: Rajasthan: 14,426 rows
+2026-08-05 02:41:41  WARNING   src.preprocessing: Dropped 1,748 rows with missing target labels before train/test split.
+2026-08-05 02:41:41  INFO      src.preprocessing: Train/test split: 10,142 train | 2,536 test (20% test, stratified on stunted)
+2026-08-05 02:41:41  INFO      src.federated.partition: Maharashtra: 9,411 rows
+2026-08-05 02:41:41  WARNING   src.preprocessing: Dropped 1,404 rows with missing target labels before train/test split.
+2026-08-05 02:41:41  INFO      src.preprocessing: Train/test split: 6,405 train | 1,602 test (20% test, stratified on stunted)
+2026-08-05 02:41:41  INFO      src.federated.partition: Created 5 state partitions
+2026-08-05 02:41:41  INFO      __main__: Starting FL simulation: 10 rounds, 5 clients
+2026-08-05 02:42:21  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:26  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:42:26  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:26  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:42:26  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:42:30  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:30  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:30  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:42:30  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:42:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:34  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:42:34  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:42:36  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:42:36  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:42:36  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:37  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:42:37  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:42:41  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:41  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:41  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:42:41  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:42:42  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:42:42  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:42:42  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:42:42  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:42:42  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:42:42  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:42:42  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:42:42  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:42:42  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:42:42  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:42:42  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:42  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:42  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:42:42  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:42:42  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:42:42  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:42:42  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:42:42  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:42:42  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:42:42  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:42  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:42:42  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:42:42  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:42:42  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:42:42  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:42:42  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:42:43  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:42:43  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:42:43  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:42:43  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:42:43  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:42:43  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:43  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:43  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:42:43  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:42:43  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:42:43  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:42:46  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:46  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:42:46  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:42:47  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:47  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:42:47  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:42:48  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:49  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:42:49  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:42:52  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:52  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:53  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:42:53  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:42:53  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:42:53  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:42:53  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:42:53  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:42:53  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:42:53  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:42:53  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:42:53  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:42:53  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:42:53  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:42:53  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:53  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:53  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:42:53  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:42:53  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:42:53  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:42:53  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:42:53  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:42:53  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:42:53  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:53  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:42:53  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:42:53  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:42:53  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:42:53  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:42:54  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:42:54  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:42:54  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:42:54  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:42:54  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:42:54  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:42:54  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:54  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:54  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:42:54  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:42:54  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:42:54  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:42:57  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:58  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:42:58  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:42:59  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:42:59  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:42:59  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:43:00  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:00  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:00  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:43:03  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:03  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:04  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:04  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:04  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:43:04  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:43:04  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:43:04  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:43:04  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:43:04  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:04  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:43:04  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:43:04  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:43:04  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:43:04  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:43:04  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:04  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:05  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:05  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:43:05  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:43:05  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:43:05  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:43:05  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:43:05  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:05  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:43:05  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:43:05  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:43:05  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:43:05  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:43:05  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:05  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:43:05  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:43:05  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:43:05  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:43:05  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:43:05  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:05  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:05  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:05  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:43:05  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:05  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:43:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:08  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:08  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:43:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:09  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:09  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:43:11  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:11  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:11  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:43:15  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:15  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:15  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:15  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:15  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:43:15  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:43:15  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:43:15  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:43:15  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:43:15  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:15  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:43:15  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:43:15  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:43:15  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:43:15  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:43:15  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:16  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:16  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:16  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:43:16  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:43:16  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:43:16  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:43:16  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:43:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:16  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:43:16  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:43:16  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:43:16  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:43:16  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:43:16  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:16  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:43:16  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:43:16  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:43:16  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:43:16  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:43:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:17  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:17  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:43:17  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:17  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:43:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:19  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:19  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:43:20  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:21  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:21  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:43:21  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:22  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:22  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:43:26  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:26  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:26  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:26  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:26  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:43:26  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:43:26  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:43:26  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:43:26  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:43:26  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:26  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:43:26  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:43:27  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:43:27  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:43:27  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:43:27  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:27  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:27  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:27  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:43:27  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:43:27  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:43:27  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:43:27  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:43:27  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:27  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:43:27  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:43:27  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:43:27  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:43:27  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:43:28  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:28  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:43:28  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:43:28  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:43:28  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:43:28  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:43:28  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:28  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:29  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:29  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:43:29  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:29  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:43:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:33  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:33  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:43:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:34  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:34  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:43:35  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:35  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:35  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:43:36  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:36  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:37  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:37  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:37  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:43:37  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:43:37  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:43:37  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:43:37  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:43:37  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:37  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:43:38  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:43:38  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:43:38  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:43:38  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:43:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:38  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:38  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:43:38  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:43:38  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:43:38  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:43:38  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:43:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:38  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:38  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:43:38  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:43:38  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:43:38  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:43:38  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:43:38  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:38  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:43:38  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:43:38  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:43:38  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:43:38  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:43:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:39  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:39  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:43:39  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:39  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:43:41  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:41  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:41  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:41  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:43:41  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:41  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:43:44  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:45  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:45  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:43:48  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:48  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:48  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:48  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:48  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:43:48  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:43:48  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:43:48  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:43:48  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:43:48  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:43:48  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:43:48  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:43:48  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:43:48  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:43:48  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:48  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:49  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:49  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:49  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:43:49  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:43:49  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:43:49  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:43:49  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:43:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:49  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:43:49  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:43:49  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:49  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:43:49  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:43:49  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:43:49  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:43:49  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:43:49  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:43:49  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:43:49  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:43:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:50  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:43:50  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:43:50  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:43:50  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:43:53  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:53  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:43:53  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:43:54  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:55  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:55  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:55  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:43:55  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:55  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:43:58  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:58  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:59  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:43:59  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:43:59  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:43:59  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:43:59  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:43:59  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:43:59  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:43:59  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:59  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:43:59  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:43:59  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:43:59  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:43:59  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:43:59  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:43:59  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:44:00  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:44:00  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:44:00  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:44:00  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:44:00  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:44:00  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:44:00  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:44:00  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:44:00  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:44:00  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:44:00  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:44:00  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:00  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:44:00  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:44:00  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:44:00  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:44:00  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:44:00  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:44:00  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:00  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:01  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:44:01  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:44:01  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:44:01  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:44:05  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:05  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:44:05  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:44:05  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:06  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:44:06  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:44:07  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:07  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:44:07  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:44:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:09  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:44:09  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:44:09  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:44:09  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:44:09  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:44:09  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:44:09  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:44:09  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:10  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:44:10  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:44:10  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:44:10  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:44:10  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:44:10  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:10  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:44:10  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:44:10  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:44:10  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:44:10  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:44:10  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:44:10  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:10  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:44:11  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:44:11  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:44:11  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:44:11  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:44:11  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:44:11  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:44:11  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:44:11  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:44:11  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:44:11  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:44:11  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:44:11  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:11  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:11  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:44:11  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:44:11  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:44:11  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:44:13  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:14  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:44:14  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:44:14  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:15  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:44:15  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:44:17  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:17  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:44:17  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:44:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:20  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:44:20  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:44:20  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:44:20  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:44:20  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:44:20  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:44:20  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:44:20  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:20  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:44:20  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:44:20  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:44:20  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:44:20  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:44:20  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:21  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:44:21  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:44:21  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:44:21  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:44:21  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:44:21  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:44:21  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:44:21  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:44:21  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:44:21  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:44:21  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:44:21  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:44:21  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:44:21  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:44:21  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:44:21  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:44:21  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:44:21  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:44:21  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:45:09  INFO      __main__: National test set: 39,760 rows
+2026-08-05 02:45:37  INFO      __main__: Dataset loaded: 228,356 rows
+2026-08-05 02:45:37  INFO      src.federated.partition: Uttar_Pradesh: 34,330 rows
+2026-08-05 02:45:37  WARNING   src.preprocessing: Dropped 4,659 rows with missing target labels before train/test split.
+2026-08-05 02:45:37  INFO      src.preprocessing: Train/test split: 23,736 train | 5,935 test (20% test, stratified on stunted)
+2026-08-05 02:45:37  INFO      src.federated.partition: Bihar: 20,179 rows
+2026-08-05 02:45:37  WARNING   src.preprocessing: Dropped 2,443 rows with missing target labels before train/test split.
+2026-08-05 02:45:37  INFO      src.preprocessing: Train/test split: 14,188 train | 3,548 test (20% test, stratified on stunted)
+2026-08-05 02:45:37  INFO      src.federated.partition: Madhya_Pradesh: 15,847 rows
+2026-08-05 02:45:37  WARNING   src.preprocessing: Dropped 2,242 rows with missing target labels before train/test split.
+2026-08-05 02:45:37  INFO      src.preprocessing: Train/test split: 10,884 train | 2,721 test (20% test, stratified on stunted)
+2026-08-05 02:45:37  INFO      src.federated.partition: Rajasthan: 14,426 rows
+2026-08-05 02:45:37  WARNING   src.preprocessing: Dropped 1,748 rows with missing target labels before train/test split.
+2026-08-05 02:45:37  INFO      src.preprocessing: Train/test split: 10,142 train | 2,536 test (20% test, stratified on stunted)
+2026-08-05 02:45:37  INFO      src.federated.partition: Maharashtra: 9,411 rows
+2026-08-05 02:45:37  WARNING   src.preprocessing: Dropped 1,404 rows with missing target labels before train/test split.
+2026-08-05 02:45:37  INFO      src.preprocessing: Train/test split: 6,405 train | 1,602 test (20% test, stratified on stunted)
+2026-08-05 02:45:37  INFO      src.federated.partition: Created 5 state partitions
+2026-08-05 02:45:37  INFO      __main__: Starting FL simulation: 10 rounds, 5 clients
+2026-08-05 02:45:58  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:01  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:02  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:02  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:46:04  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:04  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:04  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:46:06  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:07  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:08  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:08  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:46:11  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:12  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:12  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:46:12  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:12  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:46:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:17  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:17  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:46:17  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:46:17  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:17  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:46:17  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:46:17  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:46:17  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:17  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:46:17  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:46:17  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:46:17  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:46:17  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:46:17  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:17  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:18  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:46:18  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:46:18  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:46:18  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:46:18  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:46:18  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:18  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:18  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:46:18  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:46:18  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:46:18  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:46:18  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:46:18  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:18  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:46:18  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:46:18  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:46:18  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:46:18  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:46:18  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:18  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:19  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:19  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:46:19  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:19  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:46:21  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:21  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:22  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:22  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:46:22  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:22  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:46:24  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:24  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:24  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:46:28  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:28  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:28  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:28  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:28  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:46:28  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:46:28  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:46:28  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:46:28  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:46:28  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:28  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:46:28  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:46:29  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:46:29  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:46:29  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:46:29  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:29  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:29  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:29  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:46:29  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:46:29  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:46:29  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:46:29  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:46:29  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:29  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:46:29  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:46:29  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:46:29  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:46:29  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:46:29  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:30  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:46:30  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:46:30  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:46:30  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:46:30  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:46:30  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:30  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:30  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:30  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:46:30  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:30  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:46:32  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:33  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:33  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:46:34  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:35  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:35  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:46:35  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:36  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:36  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:46:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:39  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:39  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:39  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:46:39  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:46:39  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:46:39  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:46:39  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:46:39  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:39  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:46:39  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:46:39  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:46:39  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:46:39  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:46:39  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:39  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:39  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:46:39  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:46:39  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:46:39  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:46:39  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:46:39  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:39  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:40  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:46:40  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:46:40  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:40  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:46:40  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:46:40  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:46:40  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:46:40  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:46:40  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:46:40  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:46:40  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:46:40  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:40  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:40  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:40  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:46:40  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:40  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:46:42  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:42  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:42  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:46:43  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:44  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:44  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:46:44  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:45  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:45  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:46:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:50  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:50  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:46:50  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:46:50  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:50  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:46:50  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:46:50  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:46:50  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:50  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:46:50  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:46:50  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:46:50  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:46:50  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:46:50  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:50  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:51  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:51  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:46:51  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:46:51  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:46:51  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:46:51  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:46:51  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:51  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:46:51  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:46:51  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:46:51  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:46:51  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:46:51  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:51  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:46:51  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:46:51  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:46:51  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:46:51  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:46:51  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:51  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:51  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:46:51  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:46:52  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:46:52  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:46:53  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:54  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:54  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:46:54  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:46:54  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:46:54  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:46:57  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:46:57  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:46:57  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:47:00  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:00  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:01  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:01  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:47:01  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:47:01  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:01  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:47:01  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:47:01  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:47:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:01  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:47:01  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:47:01  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:47:01  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:47:01  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:47:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:02  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:02  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:02  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:47:02  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:47:02  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:47:02  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:47:02  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:47:02  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:47:02  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:47:02  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:47:02  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:47:02  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:47:02  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:02  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:03  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:47:03  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:47:03  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:47:03  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:47:03  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:47:03  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:03  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:03  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:03  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:47:03  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:03  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:47:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:08  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:08  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:47:09  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:09  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:47:11  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:11  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:11  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:47:14  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:14  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:15  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:15  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:15  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:47:15  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:47:15  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:47:15  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:47:15  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:47:15  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:47:15  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:15  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:47:15  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:47:15  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:47:15  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:47:15  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:15  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:15  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:47:15  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:47:15  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:47:15  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:47:15  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:47:15  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:15  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:15  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:15  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:47:16  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:47:16  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:47:16  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:47:16  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:47:16  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:47:16  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:47:16  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:47:16  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:47:16  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:47:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:16  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:16  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:47:16  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:16  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:47:20  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:22  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:22  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:47:23  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:25  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:25  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:47:31  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:31  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:31  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:47:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:38  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:38  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:38  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:47:38  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:47:38  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:47:38  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:47:38  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:47:38  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:47:38  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:47:38  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:47:38  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:47:38  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:47:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:38  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:39  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:39  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:39  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:47:39  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:47:39  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:47:39  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:47:39  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:47:39  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:39  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:47:39  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:47:39  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:47:39  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:47:39  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:47:39  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:39  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:47:39  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:47:39  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:47:39  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:47:39  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:47:39  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:39  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:40  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:40  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:47:40  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:40  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:47:44  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:44  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:44  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:47:45  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:45  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:45  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:47:47  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:47  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:47  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:47:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:49  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:49  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:49  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:47:49  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:47:49  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:47:49  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:47:49  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:47:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:49  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:47:49  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:47:49  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:47:49  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:47:49  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:47:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:50  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:50  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:47:50  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:47:50  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:47:50  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:47:50  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:47:50  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:50  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:50  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:47:50  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:47:50  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:47:50  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:47:50  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:47:50  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:50  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:47:50  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:47:50  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:47:50  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:47:50  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:47:51  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:51  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:51  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:47:51  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:47:51  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:47:51  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:47:54  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:54  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:47:54  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:47:55  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:56  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:47:56  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:47:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:47:57  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:47:57  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:48:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:01  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:48:01  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:48:01  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:48:01  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:48:01  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:48:01  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:48:01  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:48:01  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:48:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:01  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:48:01  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:48:01  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:48:01  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:48:02  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:02  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:48:02  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:48:02  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:48:02  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:48:02  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:48:02  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:48:02  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:48:02  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:02  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:48:02  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:48:02  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:48:02  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:48:02  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:48:02  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:48:02  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:48:02  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:48:02  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:48:02  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:48:02  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:48:02  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:02  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:03  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:48:03  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:48:03  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:48:03  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:48:05  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:05  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:48:05  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:48:06  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:07  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:48:07  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:48:07  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:08  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:48:08  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:48:12  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:12  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:13  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:48:13  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:48:13  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:48:13  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:48:13  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:48:13  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:48:13  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:48:13  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:48:13  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:48:13  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:13  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:48:13  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:48:13  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:48:13  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:13  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:48:13  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:48:13  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:48:13  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:48:13  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:48:13  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:48:13  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:48:13  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:48:14  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:48:14  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:48:14  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:48:14  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:48:14  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:48:14  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:48:14  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:48:14  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:48:14  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:48:14  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:48:14  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:48:46  INFO      __main__: National test set: 39,760 rows
+2026-08-05 02:53:02  INFO      __main__: Dataset loaded: 228,356 rows
+2026-08-05 02:53:02  INFO      src.federated.partition: Uttar_Pradesh: 34,330 rows
+2026-08-05 02:53:02  WARNING   src.preprocessing: Dropped 4,659 rows with missing target labels before train/test split.
+2026-08-05 02:53:02  INFO      src.preprocessing: Train/test split: 23,736 train | 5,935 test (20% test, stratified on stunted)
+2026-08-05 02:53:02  INFO      src.federated.partition: Bihar: 20,179 rows
+2026-08-05 02:53:02  WARNING   src.preprocessing: Dropped 2,443 rows with missing target labels before train/test split.
+2026-08-05 02:53:02  INFO      src.preprocessing: Train/test split: 14,188 train | 3,548 test (20% test, stratified on stunted)
+2026-08-05 02:53:02  INFO      src.federated.partition: Madhya_Pradesh: 15,847 rows
+2026-08-05 02:53:02  WARNING   src.preprocessing: Dropped 2,242 rows with missing target labels before train/test split.
+2026-08-05 02:53:02  INFO      src.preprocessing: Train/test split: 10,884 train | 2,721 test (20% test, stratified on stunted)
+2026-08-05 02:53:02  INFO      src.federated.partition: Rajasthan: 14,426 rows
+2026-08-05 02:53:02  WARNING   src.preprocessing: Dropped 1,748 rows with missing target labels before train/test split.
+2026-08-05 02:53:02  INFO      src.preprocessing: Train/test split: 10,142 train | 2,536 test (20% test, stratified on stunted)
+2026-08-05 02:53:02  INFO      src.federated.partition: Maharashtra: 9,411 rows
+2026-08-05 02:53:02  WARNING   src.preprocessing: Dropped 1,404 rows with missing target labels before train/test split.
+2026-08-05 02:53:02  INFO      src.preprocessing: Train/test split: 6,405 train | 1,602 test (20% test, stratified on stunted)
+2026-08-05 02:53:02  INFO      src.federated.partition: Created 5 state partitions
+2026-08-05 02:53:02  INFO      __main__: Starting FL simulation: 10 rounds, 5 clients
+2026-08-05 02:53:25  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:29  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:53:29  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:29  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:53:29  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:53:34  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:35  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:35  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:53:35  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:53:39  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:40  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:53:40  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:53:40  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:53:40  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:53:42  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:42  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:53:42  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:53:45  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:45  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:45  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:53:45  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:53:45  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:53:45  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:53:45  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:53:45  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:53:46  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:53:46  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:53:46  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:53:46  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:53:46  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:53:46  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:53:46  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:46  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:46  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:53:46  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:53:46  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:53:46  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:53:46  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:53:46  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:53:46  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:53:46  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:53:46  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:46  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:53:46  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:53:46  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:53:46  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:53:46  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:53:46  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:53:46  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:53:46  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:53:46  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:53:46  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:53:47  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:47  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:47  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:53:47  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:53:47  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:53:47  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:53:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:50  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:53:50  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:53:52  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:52  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:53:52  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:53:52  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:53  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:53:53  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:53:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:57  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:53:57  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:53:57  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:53:57  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:53:57  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:53:57  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:53:57  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:53:57  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:53:57  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:53:57  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:57  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:53:57  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:53:57  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:53:57  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:57  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:53:57  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:53:57  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:53:57  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:53:57  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:53:57  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:53:57  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:57  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:53:57  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:53:57  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:53:57  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:53:57  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:53:57  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:53:58  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:53:58  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:53:58  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:53:58  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:53:58  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:53:58  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:53:58  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:58  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:53:58  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:53:58  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:53:58  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:53:58  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:54:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:01  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:01  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:54:02  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:03  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:03  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:54:03  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:03  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:03  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:54:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:08  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:08  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:08  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:54:08  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:54:08  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:54:08  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:54:08  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:54:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:08  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:54:08  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:54:08  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:54:08  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:54:08  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:54:08  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:09  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:09  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:09  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:54:09  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:54:09  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:54:09  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:54:09  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:54:09  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:09  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:54:09  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:54:09  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:54:09  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:54:09  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:54:09  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:10  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:54:10  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:54:10  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:54:10  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:54:10  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:54:10  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:10  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:10  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:10  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:54:10  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:10  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:54:12  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:12  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:13  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:13  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:54:13  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:13  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:54:16  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:16  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:16  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:54:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:20  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:20  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:54:20  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:54:20  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:54:20  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:54:20  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:54:20  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:20  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:20  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:54:20  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:54:20  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:54:20  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:54:20  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:54:20  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:21  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:21  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:54:21  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:54:21  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:54:21  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:54:21  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:54:21  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:21  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:21  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:54:21  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:54:22  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:54:22  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:54:22  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:54:22  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:22  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:54:22  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:54:22  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:54:22  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:54:22  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:54:22  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:22  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:22  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:22  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:54:22  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:22  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:54:25  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:25  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:25  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:54:26  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:27  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:27  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:54:27  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:28  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:28  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:54:32  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:32  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:32  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:32  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:32  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:54:32  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:54:32  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:54:32  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:54:32  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:54:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:33  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:54:33  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:54:33  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:54:33  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:54:33  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:54:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:33  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:33  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:33  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:54:33  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:54:33  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:54:33  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:54:33  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:54:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:33  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:54:33  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:54:33  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:54:33  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:54:33  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:54:33  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:33  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:54:33  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:54:33  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:54:33  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:54:33  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:54:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:33  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:34  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:34  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:54:34  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:34  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:54:37  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:37  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:37  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:54:40  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:40  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:40  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:54:40  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:41  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:41  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:54:43  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:43  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:43  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:43  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:43  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:54:43  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:54:43  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:54:43  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:54:43  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:54:43  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:44  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:54:44  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:54:44  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:54:44  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:54:44  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:54:44  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:44  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:44  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:54:44  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:54:44  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:54:44  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:54:44  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:54:44  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:44  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:45  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:54:45  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:54:45  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:45  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:54:45  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:54:45  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:54:45  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:54:45  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:54:45  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:54:45  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:54:45  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:54:45  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:45  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:45  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:45  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:54:45  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:45  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:54:48  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:49  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:49  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:54:49  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:50  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:50  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:54:51  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:51  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:51  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:54:55  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:55  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:55  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:54:55  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:54:55  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:54:55  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:54:55  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:54:55  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:54:55  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:54:55  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:54:55  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:54:55  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:54:55  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:54:55  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:54:55  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:55  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:56  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:56  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:56  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:54:56  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:54:56  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:54:56  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:54:56  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:54:56  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:54:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:56  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:54:56  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:54:56  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:54:56  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:54:56  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:54:56  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:54:56  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:54:56  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:54:56  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:54:56  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:54:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:54:57  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:54:57  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:54:57  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:54:57  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:54:59  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:00  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:55:00  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:55:01  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:02  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:55:02  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:55:02  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:03  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:55:03  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:55:06  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:06  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:06  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:55:06  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:55:06  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:55:06  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:55:06  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:55:06  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:55:06  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:55:06  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:55:06  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:06  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:55:06  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:55:06  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:55:06  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:55:06  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:06  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:55:07  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:55:07  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:55:07  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:55:07  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:55:07  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:55:07  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:55:07  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:07  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:55:07  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:55:07  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:55:07  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:55:07  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:55:07  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:55:07  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:55:07  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:55:07  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:55:07  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:55:07  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:55:07  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:07  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:08  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:55:08  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:55:08  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:55:08  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:55:10  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:10  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:11  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:55:11  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:55:11  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:55:11  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:55:14  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:14  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:55:14  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:55:17  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:17  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:17  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:55:18  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:55:18  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:55:18  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:55:18  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:55:18  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:55:18  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:55:18  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:18  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:55:18  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:55:18  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:55:18  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:55:18  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:55:18  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:18  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:55:18  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:55:18  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:55:18  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:55:18  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:55:18  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:55:18  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:18  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:55:19  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:55:19  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:55:19  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:55:19  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:55:19  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:55:19  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:55:19  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:55:19  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:55:19  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:55:19  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:55:19  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:55:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:19  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:19  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:55:19  INFO      src.federated.client: [Madhya_Pradesh] Local training: 10,884 rows
+2026-08-05 02:55:19  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:55:19  INFO      src.federated.client: [Rajasthan] Local training: 10,142 rows
+2026-08-05 02:55:22  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:22  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:22  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:55:22  INFO      src.federated.client: [Maharashtra] Local training: 6,405 rows
+2026-08-05 02:55:22  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:55:22  INFO      src.federated.client: [Uttar_Pradesh] Local training: 23,736 rows
+2026-08-05 02:55:24  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:25  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:55:25  INFO      src.federated.client: [Bihar] Local training: 14,188 rows
+2026-08-05 02:55:28  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:28  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:29  INFO      src.federated.client: Client [Madhya_Pradesh] initialised: 10,884 local rows
+2026-08-05 02:55:29  INFO      src.federated.client: Client [Rajasthan] initialised: 10,142 local rows
+2026-08-05 02:55:29  INFO      src.evaluation: stunted: recall=0.637 f1=0.695 roc_auc=0.869
+2026-08-05 02:55:29  INFO      src.evaluation: underweight: recall=0.738 f1=0.690 roc_auc=0.865
+2026-08-05 02:55:29  INFO      src.evaluation: wasted: recall=0.501 f1=0.504 roc_auc=0.816
+2026-08-05 02:55:29  INFO      src.evaluation: Macro avg: recall=0.625
+2026-08-05 02:55:29  INFO      src.federated.client: [Madhya_Pradesh] Eval recall: 0.6253
+2026-08-05 02:55:29  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:29  INFO      src.evaluation: stunted: recall=0.870 f1=0.739 roc_auc=0.904
+2026-08-05 02:55:29  INFO      src.evaluation: underweight: recall=0.882 f1=0.730 roc_auc=0.919
+2026-08-05 02:55:29  INFO      src.evaluation: wasted: recall=0.542 f1=0.643 roc_auc=0.909
+2026-08-05 02:55:29  INFO      src.evaluation: Macro avg: recall=0.764
+2026-08-05 02:55:29  INFO      src.federated.client: [Rajasthan] Eval recall: 0.7644
+2026-08-05 02:55:29  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:29  INFO      src.federated.client: Client [Uttar_Pradesh] initialised: 23,736 local rows
+2026-08-05 02:55:29  INFO      src.federated.client: Client [Bihar] initialised: 14,188 local rows
+2026-08-05 02:55:29  INFO      src.evaluation: stunted: recall=0.797 f1=0.747 roc_auc=0.870
+2026-08-05 02:55:29  INFO      src.evaluation: stunted: recall=0.819 f1=0.751 roc_auc=0.858
+2026-08-05 02:55:29  INFO      src.evaluation: underweight: recall=0.692 f1=0.733 roc_auc=0.914
+2026-08-05 02:55:29  INFO      src.evaluation: underweight: recall=0.801 f1=0.747 roc_auc=0.874
+2026-08-05 02:55:29  INFO      src.evaluation: wasted: recall=0.492 f1=0.561 roc_auc=0.871
+2026-08-05 02:55:29  INFO      src.evaluation: Macro avg: recall=0.660
+2026-08-05 02:55:29  INFO      src.federated.client: [Uttar_Pradesh] Eval recall: 0.6601
+2026-08-05 02:55:29  INFO      src.evaluation: wasted: recall=0.435 f1=0.462 roc_auc=0.760
+2026-08-05 02:55:29  INFO      src.evaluation: Macro avg: recall=0.685
+2026-08-05 02:55:29  INFO      src.federated.client: [Bihar] Eval recall: 0.6851
+2026-08-05 02:55:29  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:30  INFO      src.federated.client: Client [Maharashtra] initialised: 6,405 local rows
+2026-08-05 02:55:30  INFO      src.evaluation: stunted: recall=0.744 f1=0.735 roc_auc=0.874
+2026-08-05 02:55:30  INFO      src.evaluation: underweight: recall=0.648 f1=0.695 roc_auc=0.860
+2026-08-05 02:55:30  INFO      src.evaluation: wasted: recall=0.600 f1=0.665 roc_auc=0.910
+2026-08-05 02:55:30  INFO      src.evaluation: Macro avg: recall=0.664
+2026-08-05 02:55:30  INFO      src.federated.client: [Maharashtra] Eval recall: 0.6638
+2026-08-05 02:55:30  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 02:55:39  INFO      src.model: Model saved: /workspaces/malnutrisense/models/fl_global_model.pkl  (4.8 MB)
+2026-08-05 02:55:39  INFO      __main__: Federated global model saved: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 02:55:44  INFO      __main__: National test set: 39,760 rows
+2026-08-05 02:55:44  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 02:55:44  INFO      __main__: Federated global model loaded
+2026-08-05 02:57:07  INFO      __main__: National test set: 39,760 rows
+2026-08-05 02:57:07  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 02:57:07  INFO      __main__: Federated global model loaded
+2026-08-05 02:57:07  WARNING   __main__: X_test missing 1 model feature columns; adding as NaN. Sample: ['V024']
+2026-08-05 02:57:07  INFO      src.evaluation: stunted: recall=0.993 f1=0.967 roc_auc=0.999
+2026-08-05 02:57:07  INFO      src.evaluation: underweight: recall=0.992 f1=0.967 roc_auc=0.999
+2026-08-05 02:57:07  INFO      src.evaluation: wasted: recall=0.989 f1=0.966 roc_auc=0.999
+2026-08-05 02:57:07  INFO      src.evaluation: Macro avg: recall=0.991
+2026-08-05 02:57:48  INFO      __main__: National test set: 39,760 rows
+2026-08-05 02:57:48  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 02:57:48  INFO      __main__: Federated global model loaded
+2026-08-05 02:57:48  WARNING   __main__: X_test missing 1 model feature columns; adding as NaN. Sample: ['V024']
+2026-08-05 02:57:49  INFO      src.evaluation: stunted: recall=0.993 f1=0.967 roc_auc=0.999
+2026-08-05 02:57:49  INFO      src.evaluation: underweight: recall=0.992 f1=0.967 roc_auc=0.999
+2026-08-05 02:57:49  INFO      src.evaluation: wasted: recall=0.989 f1=0.966 roc_auc=0.999
+2026-08-05 02:57:49  INFO      src.evaluation: Macro avg: recall=0.991
