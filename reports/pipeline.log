@@ -4818,3 +4818,87 @@
 2026-08-05 03:06:28  INFO      src.evaluation: underweight: recall=0.995 f1=0.973 roc_auc=0.999
 2026-08-05 03:06:28  INFO      src.evaluation: wasted: recall=0.988 f1=0.965 roc_auc=0.999
 2026-08-05 03:06:28  INFO      src.evaluation: Macro avg: recall=0.991
+2026-08-05 03:10:50  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-05 03:10:50  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 03:10:50  INFO      __main__: Running centralised fairness audit...
+2026-08-05 03:10:51  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-08-05 03:10:51  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-05 03:10:51  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:10:51  INFO      src.fairness: Equity report: 0 rows
+2026-08-05 03:10:51  INFO      __main__: Running federated fairness audit...
+2026-08-05 03:14:13  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-05 03:14:13  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 03:14:13  INFO      __main__: Running centralised fairness audit...
+2026-08-05 03:14:14  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-08-05 03:14:14  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: B4 not in df_meta — skipping
+2026-08-05 03:14:14  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:14:14  INFO      src.fairness: Equity report: 0 rows
+2026-08-05 03:14:14  INFO      __main__: Running federated fairness audit...
+2026-08-05 03:15:13  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-05 03:15:14  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 03:15:14  INFO      __main__: Running centralised fairness audit...
+2026-08-05 03:15:14  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-08-05 03:15:14  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:15:15  INFO      src.fairness: stunted/child_sex: FNR overall=0.008
+2026-08-05 03:15:15  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:15:15  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:15:15  INFO      src.fairness: underweight/child_sex: FNR overall=0.008
+2026-08-05 03:15:15  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:15:15  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:15:15  INFO      src.fairness: wasted/child_sex: FNR overall=0.009
+2026-08-05 03:15:15  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:15:15  INFO      src.fairness: Equity report: 6 rows
+2026-08-05 03:15:15  INFO      __main__: Running federated fairness audit...
+2026-08-05 03:15:16  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-08-05 03:15:16  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:15:16  INFO      src.fairness: stunted/child_sex: FNR overall=0.007
+2026-08-05 03:15:16  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:15:16  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:15:16  INFO      src.fairness: underweight/child_sex: FNR overall=0.008
+2026-08-05 03:15:16  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:15:16  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:15:17  INFO      src.fairness: wasted/child_sex: FNR overall=0.009
+2026-08-05 03:15:17  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:15:17  INFO      src.fairness: Equity report: 6 rows
+2026-08-05 03:15:17  INFO      __main__: Fairness comparison saved: /workspaces/malnutrisense/reports/tables/fl_fairness_comparison.csv
+2026-08-05 03:16:13  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-05 03:16:13  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 03:16:13  INFO      __main__: Running centralised fairness audit...
+2026-08-05 03:16:14  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-08-05 03:16:14  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:16:14  INFO      src.fairness: stunted/child_sex: FNR overall=0.008
+2026-08-05 03:16:14  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:16:14  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:16:14  INFO      src.fairness: underweight/child_sex: FNR overall=0.008
+2026-08-05 03:16:14  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:16:14  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:16:14  INFO      src.fairness: wasted/child_sex: FNR overall=0.009
+2026-08-05 03:16:14  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:16:14  INFO      src.fairness: Equity report: 6 rows
+2026-08-05 03:16:14  INFO      __main__: Running federated fairness audit...
+2026-08-05 03:16:15  INFO      src.fairness: FairnessAuditor initialised: 39,760 test rows
+2026-08-05 03:16:15  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:16:15  INFO      src.fairness: stunted/child_sex: FNR overall=0.007
+2026-08-05 03:16:15  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:16:15  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:16:16  INFO      src.fairness: underweight/child_sex: FNR overall=0.008
+2026-08-05 03:16:16  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:16:16  WARNING   src.fairness: HV270 not in df_meta — skipping
+2026-08-05 03:16:16  INFO      src.fairness: wasted/child_sex: FNR overall=0.009
+2026-08-05 03:16:16  WARNING   src.fairness: is_aspirational not in df_meta — skipping
+2026-08-05 03:16:16  INFO      src.fairness: Equity report: 6 rows
+2026-08-05 03:16:16  INFO      __main__: Fairness comparison saved: /workspaces/malnutrisense/reports/tables/fl_fairness_comparison.csv
