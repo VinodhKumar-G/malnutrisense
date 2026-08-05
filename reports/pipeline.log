@@ -4781,3 +4781,40 @@
 2026-08-05 02:57:49  INFO      src.evaluation: underweight: recall=0.992 f1=0.967 roc_auc=0.999
 2026-08-05 02:57:49  INFO      src.evaluation: wasted: recall=0.989 f1=0.966 roc_auc=0.999
 2026-08-05 02:57:49  INFO      src.evaluation: Macro avg: recall=0.991
+2026-08-05 03:06:27  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/fl_global_model.pkl
+2026-08-05 03:06:27  INFO      src.federated.partition: Uttar_Pradesh: 34,330 rows
+2026-08-05 03:06:27  WARNING   src.preprocessing: Dropped 4,659 rows with missing target labels before train/test split.
+2026-08-05 03:06:27  INFO      src.preprocessing: Train/test split: 23,736 train | 5,935 test (20% test, stratified on stunted)
+2026-08-05 03:06:27  INFO      src.federated.partition: Bihar: 20,179 rows
+2026-08-05 03:06:27  WARNING   src.preprocessing: Dropped 2,443 rows with missing target labels before train/test split.
+2026-08-05 03:06:27  INFO      src.preprocessing: Train/test split: 14,188 train | 3,548 test (20% test, stratified on stunted)
+2026-08-05 03:06:27  INFO      src.federated.partition: Madhya_Pradesh: 15,847 rows
+2026-08-05 03:06:27  WARNING   src.preprocessing: Dropped 2,242 rows with missing target labels before train/test split.
+2026-08-05 03:06:27  INFO      src.preprocessing: Train/test split: 10,884 train | 2,721 test (20% test, stratified on stunted)
+2026-08-05 03:06:27  INFO      src.federated.partition: Rajasthan: 14,426 rows
+2026-08-05 03:06:27  WARNING   src.preprocessing: Dropped 1,748 rows with missing target labels before train/test split.
+2026-08-05 03:06:27  INFO      src.preprocessing: Train/test split: 10,142 train | 2,536 test (20% test, stratified on stunted)
+2026-08-05 03:06:27  INFO      src.federated.partition: Maharashtra: 9,411 rows
+2026-08-05 03:06:27  WARNING   src.preprocessing: Dropped 1,404 rows with missing target labels before train/test split.
+2026-08-05 03:06:27  INFO      src.preprocessing: Train/test split: 6,405 train | 1,602 test (20% test, stratified on stunted)
+2026-08-05 03:06:27  INFO      src.federated.partition: Created 5 state partitions
+2026-08-05 03:06:27  INFO      src.evaluation: stunted: recall=0.993 f1=0.969 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: underweight: recall=0.991 f1=0.966 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: wasted: recall=0.984 f1=0.966 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: Macro avg: recall=0.989
+2026-08-05 03:06:28  INFO      src.evaluation: stunted: recall=0.991 f1=0.967 roc_auc=0.998
+2026-08-05 03:06:28  INFO      src.evaluation: underweight: recall=0.988 f1=0.969 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: wasted: recall=0.988 f1=0.963 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: Macro avg: recall=0.989
+2026-08-05 03:06:28  INFO      src.evaluation: stunted: recall=0.991 f1=0.960 roc_auc=0.998
+2026-08-05 03:06:28  INFO      src.evaluation: underweight: recall=0.987 f1=0.959 roc_auc=0.998
+2026-08-05 03:06:28  INFO      src.evaluation: wasted: recall=0.984 f1=0.951 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: Macro avg: recall=0.987
+2026-08-05 03:06:28  INFO      src.evaluation: stunted: recall=0.987 f1=0.959 roc_auc=0.998
+2026-08-05 03:06:28  INFO      src.evaluation: underweight: recall=0.985 f1=0.954 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: wasted: recall=0.980 f1=0.962 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: Macro avg: recall=0.984
+2026-08-05 03:06:28  INFO      src.evaluation: stunted: recall=0.990 f1=0.963 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: underweight: recall=0.995 f1=0.973 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: wasted: recall=0.988 f1=0.965 roc_auc=0.999
+2026-08-05 03:06:28  INFO      src.evaluation: Macro avg: recall=0.991
