@@ -1,5 +1,5 @@
 Model version,Features added,Macro Recall,Stunted Recall,Wasted Recall
-MLTP (baseline),None,[from CSV],[from CSV],[from CSV]
-MLTP + satellite,NDVI + SPI,[from CSV],[from CSV],[from CSV]
-MLTP + velocity,delta_HAZ/WAZ/WHZ,[from CSV],[from CSV],[from CSV]
-MLTP + both,All satellite + velocity,[from CSV],[from CSV],[from CSV]
+MLTP (baseline),None,0.9915,0.9919,0.9909
+MLTP + satellite,NDVI + SPI,0.9914,0.9913,0.9948
+MLTP + velocity,delta_HAZ/WAZ/WHZ,0.0000,0.0000,0.0000
+MLTP + both,All satellite + velocity,0.9915,0.9919,0.9948

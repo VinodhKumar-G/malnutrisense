@@ -4902,3 +4902,131 @@
 2026-08-05 03:16:16  WARNING   src.fairness: is_aspirational not in df_meta — skipping
 2026-08-05 03:16:16  INFO      src.fairness: Equity report: 6 rows
 2026-08-05 03:16:16  INFO      __main__: Fairness comparison saved: /workspaces/malnutrisense/reports/tables/fl_fairness_comparison.csv
+2026-08-05 12:19:55  INFO      __main__: Satellite dataset: 228,356 rows x 21 cols
+2026-08-05 12:19:55  INFO      __main__: After satellite NaN drop: 205,903 rows
+2026-08-05 12:19:55  WARNING   src.preprocessing: Dropped 26,453 rows with missing target labels before train/test split.
+2026-08-05 12:19:56  INFO      src.preprocessing: Train/test split: 143,560 train | 35,890 test (20% test, stratified on stunted)
+2026-08-05 12:19:56  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 12:20:12  INFO      src.evaluation: stunted: recall=0.991 f1=0.966 roc_auc=0.999
+2026-08-05 12:20:12  INFO      src.evaluation: underweight: recall=0.991 f1=0.966 roc_auc=0.999
+2026-08-05 12:20:12  INFO      src.evaluation: wasted: recall=0.992 f1=0.964 roc_auc=0.999
+2026-08-05 12:20:12  INFO      src.evaluation: Macro avg: recall=0.991
+2026-08-05 12:20:12  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl  (4.9 MB)
+2026-08-05 12:21:44  INFO      __main__: Loading NFHS-4 KR file...
+2026-08-05 12:23:14  INFO      __main__: NFHS-4 loaded: 259,627 rows
+2026-08-05 12:23:15  INFO      __main__: Velocity computed for 35 states
+2026-08-05 12:23:22  INFO      __main__: Velocity coverage: 99.8%
+2026-08-05 12:23:32  INFO      __main__: Velocity dataset: 227,828 rows
+2026-08-05 12:23:32  WARNING   src.preprocessing: Dropped 29,485 rows with missing target labels before train/test split.
+2026-08-05 12:23:32  INFO      src.preprocessing: Train/test split: 158,674 train | 39,669 test (20% test, stratified on stunted)
+2026-08-05 12:23:32  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 12:23:47  INFO      src.evaluation: stunted: recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-05 12:23:47  INFO      src.evaluation: underweight: recall=0.997 f1=0.996 roc_auc=1.000
+2026-08-05 12:23:47  INFO      src.evaluation: wasted: recall=0.999 f1=0.996 roc_auc=1.000
+2026-08-05 12:23:47  INFO      src.evaluation: Macro avg: recall=0.999
+2026-08-05 12:23:47  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl  (2.2 MB)
+2026-08-05 12:31:12  INFO      __main__: Loading NFHS-4 KR file...
+2026-08-05 12:31:16  INFO      __main__: NFHS-4 loaded: 259,627 rows
+2026-08-05 12:31:16  INFO      __main__: Velocity computed for 35 states
+2026-08-05 12:31:20  INFO      __main__: Velocity coverage: 99.8%
+2026-08-05 12:31:40  INFO      __main__: Velocity dataset: 227,828 rows
+2026-08-05 12:31:40  WARNING   src.preprocessing: Dropped 29,485 rows with missing target labels before train/test split.
+2026-08-05 12:31:40  INFO      src.preprocessing: Train/test split: 158,674 train | 39,669 test (20% test, stratified on stunted)
+2026-08-05 12:31:40  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 12:31:55  INFO      src.evaluation: stunted: recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-05 12:31:56  INFO      src.evaluation: underweight: recall=0.997 f1=0.996 roc_auc=1.000
+2026-08-05 12:31:56  INFO      src.evaluation: wasted: recall=0.999 f1=0.996 roc_auc=1.000
+2026-08-05 12:31:56  INFO      src.evaluation: Macro avg: recall=0.999
+2026-08-05 12:31:56  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl  (2.2 MB)
+2026-08-05 12:34:17  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl
+2026-08-05 12:34:46  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl
+2026-08-05 12:34:47  INFO      src.evaluation: stunted: recall=0.993 f1=0.968 roc_auc=0.999
+2026-08-05 12:34:47  INFO      src.evaluation: underweight: recall=0.992 f1=0.970 roc_auc=0.999
+2026-08-05 12:34:47  INFO      src.evaluation: wasted: recall=0.995 f1=0.972 roc_auc=1.000
+2026-08-05 12:34:47  INFO      src.evaluation: Macro avg: recall=0.993
+2026-08-05 12:34:47  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl
+2026-08-05 12:34:48  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.941
+2026-08-05 12:34:48  INFO      src.evaluation: underweight: recall=0.000 f1=0.000 roc_auc=0.733
+2026-08-05 12:34:48  INFO      src.evaluation: wasted: recall=0.000 f1=0.000 roc_auc=0.769
+2026-08-05 12:34:48  INFO      src.evaluation: Macro avg: recall=0.000
+2026-08-05 12:35:30  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl
+2026-08-05 12:35:30  INFO      src.evaluation: stunted: recall=0.993 f1=0.968 roc_auc=0.999
+2026-08-05 12:35:31  INFO      src.evaluation: underweight: recall=0.992 f1=0.970 roc_auc=0.999
+2026-08-05 12:35:31  INFO      src.evaluation: wasted: recall=0.995 f1=0.972 roc_auc=1.000
+2026-08-05 12:35:31  INFO      src.evaluation: Macro avg: recall=0.993
+2026-08-05 12:35:31  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl
+2026-08-05 12:35:31  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.941
+2026-08-05 12:35:31  INFO      src.evaluation: underweight: recall=0.000 f1=0.000 roc_auc=0.733
+2026-08-05 12:35:31  INFO      src.evaluation: wasted: recall=0.000 f1=0.000 roc_auc=0.769
+2026-08-05 12:35:31  INFO      src.evaluation: Macro avg: recall=0.000
+2026-08-05 12:36:00  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl
+2026-08-05 12:36:00  INFO      src.evaluation: stunted: recall=0.993 f1=0.968 roc_auc=0.999
+2026-08-05 12:36:00  INFO      src.evaluation: underweight: recall=0.992 f1=0.970 roc_auc=0.999
+2026-08-05 12:36:00  INFO      src.evaluation: wasted: recall=0.995 f1=0.972 roc_auc=1.000
+2026-08-05 12:36:00  INFO      src.evaluation: Macro avg: recall=0.993
+2026-08-05 12:36:00  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl
+2026-08-05 12:36:01  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.941
+2026-08-05 12:36:01  INFO      src.evaluation: underweight: recall=0.000 f1=0.000 roc_auc=0.733
+2026-08-05 12:36:01  INFO      src.evaluation: wasted: recall=0.000 f1=0.000 roc_auc=0.769
+2026-08-05 12:36:01  INFO      src.evaluation: Macro avg: recall=0.000
+2026-08-05 12:38:24  INFO      __main__: Loading raw NFHS-5 DTA with district identifiers...
+2026-08-05 12:40:34  INFO      __main__: Loaded: 232,920 rows
+2026-08-05 12:40:34  INFO      __main__: Saved: /workspaces/malnutrisense/reports/tables/district_prevalence.csv  (707 districts)
+2026-08-05 12:43:00  INFO      __main__: GEE initialized
+2026-08-05 12:43:00  INFO      __main__: India districts loaded from GAUL
+2026-08-05 12:43:00  INFO      __main__: NDVI export task started. Check GEE Tasks tab for progress.
+2026-08-05 12:43:00  INFO      __main__: Download CSV from Google Drive when complete.
+2026-08-05 12:43:00  INFO      __main__: Save to: data/raw/external/ndvi_districts.csv
+2026-08-05 12:43:47  INFO      __main__: Satellite dataset: 228,356 rows x 21 cols
+2026-08-05 12:43:47  INFO      __main__: After satellite NaN drop: 205,903 rows
+2026-08-05 12:43:47  WARNING   src.preprocessing: Dropped 26,453 rows with missing target labels before train/test split.
+2026-08-05 12:43:47  INFO      src.preprocessing: Train/test split: 143,560 train | 35,890 test (20% test, stratified on stunted)
+2026-08-05 12:43:47  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 12:44:03  INFO      src.evaluation: stunted: recall=0.991 f1=0.966 roc_auc=0.999
+2026-08-05 12:44:03  INFO      src.evaluation: underweight: recall=0.991 f1=0.966 roc_auc=0.999
+2026-08-05 12:44:03  INFO      src.evaluation: wasted: recall=0.992 f1=0.964 roc_auc=0.999
+2026-08-05 12:44:03  INFO      src.evaluation: Macro avg: recall=0.991
+2026-08-05 12:44:03  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl  (4.9 MB)
+2026-08-05 12:44:09  INFO      __main__: Loading NFHS-4 KR file...
+2026-08-05 12:44:13  INFO      __main__: NFHS-4 loaded: 259,627 rows
+2026-08-05 12:44:13  INFO      __main__: Velocity computed for 35 states
+2026-08-05 12:44:16  INFO      __main__: Velocity coverage: 99.8%
+2026-08-05 12:44:36  INFO      __main__: Velocity dataset: 227,828 rows
+2026-08-05 12:44:36  WARNING   src.preprocessing: Dropped 29,485 rows with missing target labels before train/test split.
+2026-08-05 12:44:36  INFO      src.preprocessing: Train/test split: 158,674 train | 39,669 test (20% test, stratified on stunted)
+2026-08-05 12:44:36  INFO      src.model: Class weights loaded: {'stunted': 1.8195, 'underweight': 2.2367, 'wasted': 4.3705}
+2026-08-05 12:44:52  INFO      src.evaluation: stunted: recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-05 12:44:52  INFO      src.evaluation: underweight: recall=0.997 f1=0.996 roc_auc=1.000
+2026-08-05 12:44:52  INFO      src.evaluation: wasted: recall=0.999 f1=0.996 roc_auc=1.000
+2026-08-05 12:44:52  INFO      src.evaluation: Macro avg: recall=0.999
+2026-08-05 12:44:52  INFO      src.model: Model saved: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl  (2.2 MB)
+2026-08-05 12:45:02  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl
+2026-08-05 12:45:02  INFO      src.evaluation: stunted: recall=0.993 f1=0.968 roc_auc=0.999
+2026-08-05 12:45:02  INFO      src.evaluation: underweight: recall=0.992 f1=0.970 roc_auc=0.999
+2026-08-05 12:45:03  INFO      src.evaluation: wasted: recall=0.995 f1=0.972 roc_auc=1.000
+2026-08-05 12:45:03  INFO      src.evaluation: Macro avg: recall=0.993
+2026-08-05 12:45:03  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl
+2026-08-05 12:45:03  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.941
+2026-08-05 12:45:03  INFO      src.evaluation: underweight: recall=0.000 f1=0.000 roc_auc=0.733
+2026-08-05 12:45:03  INFO      src.evaluation: wasted: recall=0.000 f1=0.000 roc_auc=0.769
+2026-08-05 12:45:03  INFO      src.evaluation: Macro avg: recall=0.000
+2026-08-05 12:48:05  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl
+2026-08-05 12:48:06  INFO      src.evaluation: stunted: recall=0.993 f1=0.968 roc_auc=0.999
+2026-08-05 12:48:06  INFO      src.evaluation: underweight: recall=0.992 f1=0.970 roc_auc=0.999
+2026-08-05 12:48:06  INFO      src.evaluation: wasted: recall=0.995 f1=0.972 roc_auc=1.000
+2026-08-05 12:48:06  INFO      src.evaluation: Macro avg: recall=0.993
+2026-08-05 12:48:07  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl
+2026-08-05 12:48:08  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.941
+2026-08-05 12:48:08  INFO      src.evaluation: underweight: recall=0.000 f1=0.000 roc_auc=0.733
+2026-08-05 12:48:08  INFO      src.evaluation: wasted: recall=0.000 f1=0.000 roc_auc=0.769
+2026-08-05 12:48:08  INFO      src.evaluation: Macro avg: recall=0.000
+2026-08-05 12:48:37  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_satellite_v1.pkl
+2026-08-05 12:48:38  INFO      src.evaluation: stunted: recall=0.993 f1=0.968 roc_auc=0.999
+2026-08-05 12:48:38  INFO      src.evaluation: underweight: recall=0.992 f1=0.970 roc_auc=0.999
+2026-08-05 12:48:38  INFO      src.evaluation: wasted: recall=0.995 f1=0.972 roc_auc=1.000
+2026-08-05 12:48:38  INFO      src.evaluation: Macro avg: recall=0.993
+2026-08-05 12:48:38  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_velocity_v1.pkl
+2026-08-05 12:48:39  INFO      src.evaluation: stunted: recall=0.000 f1=0.000 roc_auc=0.941
+2026-08-05 12:48:39  INFO      src.evaluation: underweight: recall=0.000 f1=0.000 roc_auc=0.733
+2026-08-05 12:48:39  INFO      src.evaluation: wasted: recall=0.000 f1=0.000 roc_auc=0.769
+2026-08-05 12:48:39  INFO      src.evaluation: Macro avg: recall=0.000
