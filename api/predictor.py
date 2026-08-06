@@ -38,23 +38,62 @@ class MalnutriSensePredictor:
  
         # Load class weights for equity flag
         self.class_weights = json.loads((TABLES_DIR/'class_weights.json').read_text())
+
+    def _extract_required_feature_columns(self) -> list[str]:
+        """Return feature columns expected by model preprocessor."""
+        pre = getattr(self.model, 'named_steps', {}).get('pre') if hasattr(self.model, 'named_steps') else None
+        if pre is None or not hasattr(pre, 'transformers_'):
+            return []
+
+        cols: list[str] = []
+        for _name, _transformer, colspec in pre.transformers_:
+            if isinstance(colspec, str):
+                continue
+            try:
+                cols.extend([str(c) for c in list(colspec)])
+            except TypeError:
+                continue
+
+        return list(dict.fromkeys(cols))
  
     def features_to_df(self, features) -> pd.DataFrame:
         """Convert ChildFeatures schema to DataFrame row."""
-        return pd.DataFrame([{
-            'HW1':   features.age_months,
-            'B4':    features.sex,
-            'HV270': features.wealth_quintile,
-            'V106':  features.mother_education,
-            'HV201': features.water_source,
-            'HV205': features.toilet_type,
-            'H11':   features.diarrhoea_2weeks,
-            'M19':   features.birth_weight_g or 3000,
-            'M4':    features.breastfeed_months or 6,
-            'V025':  features.residence,
-            'V024':  features.state_code or 9,
-            'sdi':   (5 - features.wealth_quintile) / 4.0,  # simplified SDI
-        }])
+        sex_map = {'male': 1, 'female': 2}
+        residence_map = {'urban': 1, 'rural': 2}
+        education_map = {
+            'no_education': 0,
+            'primary': 1,
+            'secondary': 2,
+            'higher': 3,
+        }
+
+        sex_val = sex_map.get(str(features.sex).strip().lower(), np.nan)
+        residence_val = residence_map.get(str(features.residence).strip().lower(), np.nan)
+        edu_val = education_map.get(str(features.mother_education).strip().lower(), np.nan)
+
+        # Use lowercase DHS-style names to match model training schema.
+        row = {
+            'v024': features.state_code or 9,
+            'v025': residence_val,
+            'v106': edu_val,
+            'v130': np.nan,  # not provided by request schema
+            'b4': sex_val,
+            'm4': features.breastfeed_months if features.breastfeed_months is not None else 6,
+            'm19': features.birth_weight_g if features.birth_weight_g is not None else 3000,
+            'h11': features.diarrhoea_2weeks,
+            'hw1': features.age_months,
+            'hw2': np.nan,  # not provided by request schema
+            'hw3': np.nan,  # not provided by request schema
+        }
+
+        X = pd.DataFrame([row])
+        required_cols = self._extract_required_feature_columns()
+        if required_cols:
+            for col in required_cols:
+                if col not in X.columns:
+                    X[col] = np.nan
+            X = X.reindex(columns=required_cols)
+        return X
  
     def predict(self, features) -> dict:
         """Return per-phenotype probability and prediction."""

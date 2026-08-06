@@ -5030,3 +5030,67 @@
 2026-08-05 12:48:39  INFO      src.evaluation: underweight: recall=0.000 f1=0.000 roc_auc=0.733
 2026-08-05 12:48:39  INFO      src.evaluation: wasted: recall=0.000 f1=0.000 roc_auc=0.769
 2026-08-05 12:48:39  INFO      src.evaluation: Macro avg: recall=0.000
+2026-08-06 16:58:51  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 16:58:51  INFO      api.predictor: MLTP model loaded
+2026-08-06 16:58:51  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 16:58:51  INFO      api.main: MalnutriSense API started
+2026-08-06 16:59:22  ERROR     api.main: /predict error: columns are missing: {'m19', 'hw3', 'v130', 'v106', 'hw1', 'v024', 'v025', 'b4', 'hw2', 'm4', 'h11'}
+2026-08-06 16:59:42  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:00:05  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:00:05  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:00:05  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:00:05  INFO      api.main: MalnutriSense API started
+2026-08-06 17:00:24  ERROR     api.main: /predict error: Cannot use median strategy with non-numeric data:
+could not convert string to float: 'rural'
+2026-08-06 17:00:43  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:00:43  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:00:43  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:00:43  INFO      api.main: MalnutriSense API started
+2026-08-06 17:01:18  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:01:18  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:01:18  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:01:18  INFO      api.main: MalnutriSense API started
+2026-08-06 17:01:46  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:01:46  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:01:46  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:01:46  INFO      api.main: MalnutriSense API started
+2026-08-06 17:01:49  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:01:49  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:01:49  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:01:49  INFO      api.main: MalnutriSense API started
+2026-08-06 17:03:39  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:03:39  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:03:39  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:03:39  INFO      api.main: MalnutriSense API started
+2026-08-06 17:04:28  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:04:28  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:04:28  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:04:28  INFO      api.main: MalnutriSense API started
+2026-08-06 17:07:37  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:07:37  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:07:37  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:07:37  INFO      api.main: MalnutriSense API started
+2026-08-06 17:09:14  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:09:14  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:09:14  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:09:14  INFO      api.main: MalnutriSense API started
+2026-08-06 17:14:36  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:14:36  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:14:36  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:14:36  INFO      api.main: MalnutriSense API started
+2026-08-06 17:19:07  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:19:07  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:19:07  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:19:07  INFO      api.main: MalnutriSense API started
+2026-08-06 17:21:41  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:21:41  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:21:41  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:21:41  INFO      api.main: MalnutriSense API started
+2026-08-06 17:23:30  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:23:30  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:23:30  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:23:30  INFO      api.main: MalnutriSense API started
+2026-08-06 17:24:19  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-06 17:24:19  INFO      api.predictor: MLTP model loaded
+2026-08-06 17:24:19  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-06 17:24:19  INFO      api.main: MalnutriSense API started
