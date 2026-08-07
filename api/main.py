@@ -35,11 +35,23 @@ app.add_middleware(
  
 # Load model once at startup
 predictor = None
+
+
+def get_predictor() -> MalnutriSensePredictor:
+    """Return a loaded predictor, lazily initializing if needed."""
+    global predictor
+    if predictor is None:
+        try:
+            predictor = MalnutriSensePredictor()
+            log.info('MalnutriSense predictor loaded lazily')
+        except Exception as e:
+            log.error(f'Predictor initialization failed: {e}')
+            raise HTTPException(status_code=503, detail='Model not loaded')
+    return predictor
  
 @app.on_event('startup')
 async def startup_event():
-    global predictor
-    predictor = MalnutriSensePredictor()
+    get_predictor()
     log.info('MalnutriSense API started')
  
  
@@ -65,10 +77,8 @@ async def predict(features: ChildFeatures):
     Predict malnutrition risk for a single child.
     Returns probability and prediction (0/1) for stunting, underweight, wasting.
     """
-    if predictor is None:
-        raise HTTPException(status_code=503, detail='Model not loaded')
     try:
-        result = predictor.predict(features)
+        result = get_predictor().predict(features)
         return result
     except Exception as e:
         log.error(f'/predict error: {e}')
@@ -91,11 +101,10 @@ async def explain(features: ChildFeatures):
     Predict + return top-3 SHAP features for the prediction.
     Used by the Streamlit dashboard to show actionable risk factors.
     """
-    if predictor is None:
-        raise HTTPException(status_code=503, detail='Model not loaded')
     try:
-        prediction = predictor.predict(features)
-        explanation = predictor.explain(features)
+        current_predictor = get_predictor()
+        prediction = current_predictor.predict(features)
+        explanation = current_predictor.explain(features)
         return {**prediction, 'top_shap_features': explanation}
     except Exception as e:
         log.error(f'/explain error: {e}')

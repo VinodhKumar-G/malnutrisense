@@ -5094,3 +5094,23 @@ could not convert string to float: 'rural'
 2026-08-06 17:24:19  INFO      api.predictor: MLTP model loaded
 2026-08-06 17:24:19  INFO      api.predictor: Thresholds loaded: 3 labels
 2026-08-06 17:24:19  INFO      api.main: MalnutriSense API started
+2026-08-07 06:11:54  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-07 06:11:54  INFO      api.predictor: MLTP model loaded
+2026-08-07 06:11:54  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-07 06:11:54  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-07 06:12:07  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-07 06:12:07  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-07 06:12:07  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-07 06:12:07  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-07 06:12:07  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-07 06:12:07  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-07 06:13:30  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-07 06:13:30  INFO      api.predictor: MLTP model loaded
+2026-08-07 06:13:30  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-07 06:13:30  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-07 06:13:32  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-07 06:13:32  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-07 06:13:33  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-07 06:13:33  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-07 06:13:33  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-07 06:13:33  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
