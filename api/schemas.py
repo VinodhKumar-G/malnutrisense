@@ -22,6 +22,8 @@ class ChildFeatures(BaseModel):
 	diarrhoea_2weeks: int = Field(..., ge=0, le=1, description="0=No, 1=Yes")
 	birth_weight_g: Optional[float] = Field(None, description="Birth weight in grams")
 	breastfeed_months: Optional[float] = Field(None, description="Duration of breastfeeding")
+	weight_kg: Optional[float] = Field(None, description="Optional measured child weight in kilograms")
+	height_cm: Optional[float] = Field(None, description="Optional measured child height in centimetres")
 	residence: str = Field("rural", description="urban or rural")
 	state_code: Optional[int] = Field(None, description="NFHS V024 state code")
 

@@ -27,15 +27,15 @@ class MalnutriSensePredictor:
         model_path = MODELS_DIR / 'mltp_xgb_v1.pkl'
         if not model_path.exists():
             raise FileNotFoundError(f'Model not found: {model_path}')
- 
+
+        self.model_path = model_path
         self.model = load_model(model_path)
         log.info('MLTP model loaded')
- 
-        # Load corrected thresholds for equity-aware prediction
+
         thresh_path = TABLES_DIR / 'corrected_thresholds.json'
         self.thresholds = json.loads(thresh_path.read_text()) if thresh_path.exists() else {}
         log.info(f'Thresholds loaded: {len(self.thresholds)} labels')
- 
+
         # Load class weights for equity flag
         self.class_weights = json.loads((TABLES_DIR/'class_weights.json').read_text())
 
@@ -71,6 +71,9 @@ class MalnutriSensePredictor:
         residence_val = residence_map.get(str(features.residence).strip().lower(), np.nan)
         edu_val = education_map.get(str(features.mother_education).strip().lower(), np.nan)
 
+        weight_kg = getattr(features, 'weight_kg', None)
+        height_cm = getattr(features, 'height_cm', None)
+
         # Use lowercase DHS-style names to match model training schema.
         row = {
             'v024': features.state_code or 9,
@@ -82,8 +85,8 @@ class MalnutriSensePredictor:
             'm19': features.birth_weight_g if features.birth_weight_g is not None else 3000,
             'h11': features.diarrhoea_2weeks,
             'hw1': features.age_months,
-            'hw2': np.nan,  # not provided by request schema
-            'hw3': np.nan,  # not provided by request schema
+            'hw2': (float(weight_kg) * 10) if weight_kg is not None else np.nan,
+            'hw3': (float(height_cm) * 10) if height_cm is not None else np.nan,
         }
 
         X = pd.DataFrame([row])
@@ -94,6 +97,51 @@ class MalnutriSensePredictor:
                     X[col] = np.nan
             X = X.reindex(columns=required_cols)
         return X
+
+    def debug_prediction_case(self, features, reference_profile=None) -> dict:
+        """Return a structured investigation for unexpected high-risk predictions."""
+        X = self.features_to_df(features)
+        proba_list = self.model.predict_proba(X)
+        probabilities = {
+            label: float(proba_list[idx][0, 1])
+            for idx, label in enumerate(TARGET_COLS)
+        }
+
+        first_result = self.predict(features)
+        second_result = self.predict(features)
+        reproducible = first_result == second_result
+
+        feature_names = list(X.columns)
+        pre = getattr(self.model, 'named_steps', {}).get('pre', None)
+        if pre is not None and hasattr(pre, 'get_feature_names_out'):
+            feature_names = list(pre.get_feature_names_out())
+
+        investigation = {
+            'reproducible': reproducible,
+            'probabilities': probabilities,
+            'feature_values': X.iloc[0].to_dict(),
+            'feature_order': list(X.columns),
+            'feature_names': feature_names,
+            'missing_features': {k: str(v) for k, v in X.iloc[0].items() if pd.isna(v)},
+            'model_artifact': str(self.model_path),
+            'prediction_1': first_result,
+            'prediction_2': second_result,
+        }
+
+        if reference_profile is not None:
+            reference_result = self.predict(reference_profile)
+            if isinstance(reference_result, dict):
+                reference_max = max(reference_result[label]['probability'] for label in TARGET_COLS)
+                current_max = max(first_result[label]['probability'] for label in TARGET_COLS)
+                investigation['reference_comparison'] = {
+                    'reference_profile': reference_profile,
+                    'reference_prediction': reference_result,
+                    'current_max_probability': current_max,
+                    'reference_max_probability': reference_max,
+                    'current_not_lower_than_reference': current_max >= reference_max,
+                }
+
+        return investigation
  
     def predict(self, features) -> dict:
         """Return per-phenotype probability and prediction."""

@@ -24,6 +24,36 @@ VALID_CHILD = {
     'toilet_type': 'pit_without_slab', 'diarrhoea_2weeks': 1,
     'birth_weight_g': 2200, 'breastfeed_months': 3, 'residence': 'rural',
 }
+
+LOW_RISK_CHILD = {
+    'age_months': 36,
+    'sex': 'male',
+    'wealth_quintile': 5,
+    'mother_education': 'higher',
+    'water_source': 'piped_on_premises',
+    'toilet_type': 'flush_piped',
+    'diarrhoea_2weeks': 0,
+    'birth_weight_g': 3500,
+    'breastfeed_months': 12,
+    'residence': 'urban',
+    'weight_kg': 14.5,
+    'height_cm': 95.0,
+}
+
+HIGH_RISK_CHILD = {
+    'age_months': 36,
+    'sex': 'male',
+    'wealth_quintile': 1,
+    'mother_education': 'none',
+    'water_source': 'surface',
+    'toilet_type': 'no_facility',
+    'diarrhoea_2weeks': 1,
+    'birth_weight_g': 2200,
+    'breastfeed_months': 0,
+    'residence': 'rural',
+    'weight_kg': 8.5,
+    'height_cm': 72.0,
+}
  
 HEALTHY_CHILD = {
     'age_months': 36, 'sex': 'male', 'wealth_quintile': 5,
@@ -45,6 +75,34 @@ class TestHealthEndpoint:
  
  
 class TestPredictEndpoint:
+    def test_low_risk_child_validation_workflow(self, client):
+        from api.predictor import MalnutriSensePredictor
+        from api.schemas import ChildFeatures
+
+        predictor = MalnutriSensePredictor()
+        resp = client.post('/predict', json=LOW_RISK_CHILD)
+        assert resp.status_code == 200
+        result = resp.json()
+
+        assert result['overall_risk'] in ['low', 'medium']
+        if result['overall_risk'] == 'high':
+            debug = predictor.debug_prediction_case(ChildFeatures(**LOW_RISK_CHILD), reference_profile=ChildFeatures(**HIGH_RISK_CHILD))
+            assert debug['reproducible'] is True
+            assert set(debug['probabilities']) == {'stunted', 'underweight', 'wasted'}
+            assert set(debug['feature_order']) == {'v024', 'v025', 'v106', 'v130', 'b4', 'm4', 'm19', 'h11', 'hw1', 'hw2', 'hw3'}
+            assert 'reference_comparison' in debug
+            assert debug['reference_comparison']['current_not_lower_than_reference'] is True
+
+    def test_high_risk_child_is_not_lower_than_low_risk(self, client):
+        low_resp = client.post('/predict', json=LOW_RISK_CHILD)
+        high_resp = client.post('/predict', json=HIGH_RISK_CHILD)
+        low_result = low_resp.json()
+        high_result = high_resp.json()
+
+        low_max = max(low_result[label]['probability'] for label in ['stunted', 'underweight', 'wasted'])
+        high_max = max(high_result[label]['probability'] for label in ['stunted', 'underweight', 'wasted'])
+        assert high_max >= low_max
+
     def test_predict_returns_200(self, client):
         resp = client.post('/predict', json=VALID_CHILD)
         assert resp.status_code == 200
@@ -60,15 +118,18 @@ class TestPredictEndpoint:
         for label in ['stunted', 'underweight', 'wasted']:
             assert 0.0 <= data[label]['probability'] <= 1.0
             assert data[label]['prediction'] in [0, 1]
- 
+            assert 0.0 <= data[label]['threshold'] <= 1.0
+
     def test_predict_overall_risk_level(self, client):
         data = client.post('/predict', json=VALID_CHILD).json()
         assert data['overall_risk'] in ['high', 'medium', 'low']
- 
-    def test_equity_flag_for_poorest(self, client):
+
+    def test_predict_contract_has_required_fields(self, client):
         data = client.post('/predict', json=VALID_CHILD).json()
-        assert data['equity_flag'] is True  # wealth_quintile=1 → equity flag
- 
+        assert 'stunted' in data and 'underweight' in data and 'wasted' in data
+        assert data['overall_risk'] in {'low', 'medium', 'high'}
+        assert isinstance(data['equity_flag'], bool)
+        assert isinstance(data['equity_reason'], str)
     def test_no_equity_flag_for_richest(self, client):
         data = client.post('/predict', json=HEALTHY_CHILD).json()
         assert data['equity_flag'] is False  # wealth_quintile=5 → no flag

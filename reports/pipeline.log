@@ -5114,3 +5114,170 @@ could not convert string to float: 'rural'
 2026-08-07 06:13:33  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
 2026-08-07 06:13:33  INFO      src.explainability: SHAPExplainer initialised for 3 labels
 2026-08-07 06:13:33  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:29:38  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:29:38  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:29:38  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:29:38  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-19 15:29:38  INFO      api.main: MalnutriSense API started
+2026-08-19 15:37:16  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:37:16  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:37:16  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:38:32  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:38:32  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:38:32  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:39:16  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:39:16  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:39:16  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:40:37  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:40:37  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:40:37  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:41:27  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:41:27  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:41:27  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:41:27  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-19 15:41:38  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:41:38  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:41:39  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:41:39  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:41:40  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:41:40  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:42:28  INFO      src.model: Model loaded: models/mltp_xgb_v1.pkl
+2026-08-19 15:44:48  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:44:48  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:45:29  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:45:29  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:45:29  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:45:29  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:45:29  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:45:29  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:45:29  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-19 15:45:31  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:45:31  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:45:32  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:45:32  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:45:32  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:45:33  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:45:51  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:45:51  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:45:51  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:45:51  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:45:51  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:45:51  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:45:51  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-19 15:45:52  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:45:52  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:45:52  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:45:52  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:45:53  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:45:53  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:45:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:45:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:45:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:45:53  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:45:53  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-19 15:45:53  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-19 15:46:20  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-19 15:46:21  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-19 15:46:21  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-19 15:46:21  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-19 15:46:28  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-19 15:46:28  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-19 15:46:28  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-19 15:46:28  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-19 15:46:28  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-19 15:46:28  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-19 15:46:29  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-19 15:46:29  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-19 15:46:29  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-19 15:46:29  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-19 15:46:29  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-19 15:46:29  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-19 15:46:29  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-19 15:46:29  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-19 15:46:29  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-19 15:46:29  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-0/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-19 15:46:29  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-0/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-19 15:46:29  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:46:30  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:46:49  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-19 15:46:49  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-19 15:46:49  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-19 15:46:49  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-19 15:48:20  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:48:20  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:48:20  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:48:20  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-19 15:50:50  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:50:50  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:50:50  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:50:50  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-19 15:50:50  INFO      api.main: MalnutriSense API started
+2026-08-19 15:51:21  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:51:21  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:51:33  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:51:33  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:51:44  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:51:44  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:51:44  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:51:44  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:51:44  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:51:44  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:51:44  INFO      api.main: MalnutriSense predictor loaded lazily
+2026-08-19 15:51:45  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:51:45  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:51:46  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:51:46  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:51:46  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:51:46  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:51:46  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:51:46  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:51:46  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:51:46  INFO      src.data_loader: Labels created. Rows: 5 (dropped 0). Stunted: 40.0% | Underweight: 40.0% | Wasted: 20.0%
+2026-08-19 15:51:46  INFO      src.data_loader: Labels created. Rows: 2 (dropped 1). Stunted: 50.0% | Underweight: 50.0% | Wasted: 50.0%
+2026-08-19 15:51:46  INFO      src.data_loader: Labels created. Rows: 1 (dropped 0). Stunted: 0.0% | Underweight: 100.0% | Wasted: 0.0%
+2026-08-19 15:51:49  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:51:49  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:51:52  INFO      src.data_loader: Loaded: 232,920 rows x 14 columns
+2026-08-19 15:51:54  INFO      src.data_loader: Missing code replacement: 19,068 Z-score values → NaN
+2026-08-19 15:51:54  INFO      src.data_loader: Z-scores scaled. Final shape: (232920, 14)
+2026-08-19 15:51:54  INFO      src.data_loader: Labels created. Rows: 211,639 (dropped 21,274). Stunted: 34.5% | Underweight: 30.7% | Wasted: 17.7%
+2026-08-19 15:52:00  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-19 15:52:00  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-19 15:52:00  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-19 15:52:00  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-19 15:52:00  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-19 15:52:00  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-19 15:52:01  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-19 15:52:01  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-19 15:52:01  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-19 15:52:01  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-19 15:52:01  INFO      src.evaluation: stunted: recall=0.400 f1=0.429 roc_auc=0.531
+2026-08-19 15:52:01  INFO      src.evaluation: stunted: recall=0.333 f1=0.348 roc_auc=0.506
+2026-08-19 15:52:01  INFO      src.evaluation: underweight: recall=0.357 f1=0.333 roc_auc=0.448
+2026-08-19 15:52:01  INFO      src.evaluation: wasted: recall=0.375 f1=0.353 roc_auc=0.715
+2026-08-19 15:52:01  INFO      src.evaluation: Macro avg: recall=0.355
+2026-08-19 15:52:01  INFO      src.model: Model saved: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl  (0.0 MB)
+2026-08-19 15:52:01  INFO      src.model: Model loaded: /tmp/pytest-of-codespace/pytest-1/test_save_and_load_roundtrip0/test_model.pkl
+2026-08-19 15:52:01  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:52:02  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:52:23  INFO      src.explainability: SHAP values computed: 500 rows, 11 features
+2026-08-19 15:52:23  INFO      src.explainability: Top 8 features for stunted: ['num__hw3', 'num__hw1', 'num__b4', 'num__hw2', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-19 15:52:23  INFO      src.explainability: Top 8 features for underweight: ['num__hw2', 'num__hw1', 'num__b4', 'num__hw3', 'num__m19', 'num__v106', 'num__v024', 'num__m4']
+2026-08-19 15:52:23  INFO      src.explainability: Top 8 features for wasted: ['num__hw2', 'num__hw3', 'num__b4', 'num__hw1', 'num__v024', 'num__m19', 'num__m4', 'num__v130']
+2026-08-19 15:53:01  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:53:01  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:53:48  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:53:49  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:55:35  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:55:35  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:56:21  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:56:21  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:56:21  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:56:24  INFO      src.explainability: SHAPExplainer initialised for 3 labels
+2026-08-19 15:56:24  INFO      src.explainability: SHAP values computed: 1 rows, 11 features
+2026-08-19 15:57:24  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:57:24  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:57:24  INFO      api.predictor: Thresholds loaded: 3 labels
+2026-08-19 15:57:38  INFO      src.model: Model loaded: /workspaces/malnutrisense/models/mltp_xgb_v1.pkl
+2026-08-19 15:57:38  INFO      api.predictor: MLTP model loaded
+2026-08-19 15:57:38  INFO      api.predictor: Thresholds loaded: 3 labels
