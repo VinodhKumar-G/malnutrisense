@@ -23,6 +23,18 @@ st.set_page_config(
  
 st.title('🏥 MalnutriSense')
 st.subheader('Child Malnutrition Risk Prediction for ASHA Workers')
+
+# ── API availability check ────────────────────────────────────────────────
+try:
+    _health = requests.get(f'{API_URL}/health', timeout=3)
+    _health.raise_for_status()
+except Exception:
+    st.error(
+        f'⚠️ Cannot reach the MalnutriSense API at {API_URL}. '
+        "Start it with `uvicorn api.main:app --host 0.0.0.0 --port 8000` "
+        '(or `bash scripts/start_services.sh`) before using Predict.'
+    )
+
 st.markdown('---')
  
 # ── Input form ───────────────────────────────────────────────────────────
