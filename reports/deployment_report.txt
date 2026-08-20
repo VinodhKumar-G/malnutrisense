@@ -1,0 +1,36 @@
+
+======================================================================
+MALNUTRISENSE — PHASE 6 DEPLOYMENT REPORT
+Generated: 2026-08-20 15:26:01 UTC
+======================================================================
+
+SECTION 1: API ARCHITECTURE
+──────────────────────────────────────────────────────────────────────
+  Framework:       FastAPI
+  Routes:          GET /health, POST /predict, POST /explain
+  Authentication:  X-API-Key header (api/auth.py)
+  Model served:    mltp_xgb_v1.pkl
+  Threshold logic: Per-subgroup corrected thresholds (reports/tables/corrected_thresholds.json)
+  Status: DEPLOYED
+
+SECTION 2: DASHBOARD FEATURES
+──────────────────────────────────────────────────────────────────────
+  [OK] dashboard/app.py                         Main prediction interface
+  [OK] dashboard/pages/batch_predict.py         CSV batch upload and prediction
+  [OK] dashboard/pages/about.py                 SHAP and equity explanation guide
+
+SECTION 3: DOCKER DEPLOYMENT
+──────────────────────────────────────────────────────────────────────
+  [OK] Dockerfile
+  [OK] docker-compose.yml
+
+SECTION 4: TEST RESULTS
+──────────────────────────────────────────────────────────────────────
+  API integration tests: ======================= 15 passed, 925 warnings in 6.08s =======================
+  Recall verification: run scripts/verify_api_recall.py with API live
+    (requires uvicorn running — not run automatically by this report)
+  Browser checklist: 0 passed, 0 failed (see reports/testing_checklist.md)
+
+======================================================================
+END OF DEPLOYMENT REPORT
+======================================================================
