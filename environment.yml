@@ -1,0 +1,17 @@
+# environment.yml — MalnutriSense conda environment
+# For team members who prefer conda over pip
+name: malnutrisense
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - geopandas
+  - matplotlib
+  - pandas
+  - numpy
+  - scikit-learn
+  - pytest
+  - pip:
+    - -r requirements.txt
